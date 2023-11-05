@@ -7,10 +7,18 @@ class Pelicula(models.Model):
     director = models.CharField(max_length=50)
     duracion = models.IntegerField()
     genero = models.CharField(max_length=30)
+    #Portada de la pelicula
+    imagen = models.ImageField(upload_to = 'img/')
 
 class Raza(models.Model):
     # No es necesario crear un campo para la Primary Key, Django creará automáticamente un IntegerField.
     nombre = models.CharField(max_length=20)
+    tamnyo = models.CharField(max_length=20)
+    aspecto = models.CharField(max_length=20)
+    actitud = models.CharField(max_length=20)
+    longevidad = models.CharField(max_length=20)
+    #Personaje promedio de la raza
+    imagen = models.ImageField(upload_to='img/')
  
 class Personaje(models.Model):
     # Campo para la relación one-to-many (un empleado pertenece a un departamento)
