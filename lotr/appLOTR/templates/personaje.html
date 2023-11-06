@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block titulo %} Detalles del personaje {% endblock %}
+
+{% block contenido %}
+
+<h2>Datos del personaje</h2>
+
+{% if empleado %}
+    <ul>
+        <li>
+            {{ personaje.nombre}}
+        </li>
+        <li>
+            {{ empleado.genero}}
+        </li>
+        <li>
+            {{ empleado.estatura}}
+        </li>
+        </li>
+        <li>
+            {{ empleado.colorOjos}}
+        </li>
+        </li>
+        <li>
+            {{ empleado.colorPelo}}
+        </li>
+        </li>
+        <li>
+            {{empleado.raza}}
+        </li>
+        <li>
+            <a href="/appLOTR/peliculas/{{ personaje.pelicula.nombre }}">{{ personaje.pelicula}}</a>
+        </li>
+    </ul>
+{% endblock %}

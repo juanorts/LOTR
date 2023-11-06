@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block titulo %}Personajes de la pelicula {% endblock %}
+
+{% block contenido %}
+<h2>Lista de personajes</h2>
+<h3>{{ pelicula.nombre }}</h3>
+{% if empleados %}
+    <ul>
+        {% for p in personajes %}
+            <li>
+                <a href="/appLOTR/personajes/{{p.nombre}}">{{p.nombre}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+<p>No hay personajes creados.</p>
+{% endif %}
+{% endblock%}
