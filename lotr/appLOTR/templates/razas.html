@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo %} Razas {% endblock %}
+
+{% block contenido %}
+<h2>Lista de razas</h2>
+{% if razas %}
+	<ul>
+	{% for r in razas %}
+		<li>
+			<a href="{%url 'raza' r.id %}">{{ r.nombre}}</a>
+		</li>
+	{% endfor %}
+	</ul>
+{% else %}
+<p>No hay razas creadas.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block titulo %} Detalles de la raza {% endblock %}
+
+{% block contenido %}
+<h2>Datos de la raza</h2>
+
+{% if raza %}
+    <h3>{{ raza.nombre }}</h3>
+    <h3>Lista de personajes</h3>
+    {% if personajes %}
+        <ol>
+            {% for p in personajes %}
+                <li><a href="{%url 'personaje' p.id}">{{ p.nombre }}</a></li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <p>No hay personajes asociados a esta raza.</p>
+    {% endif %}
+
+    <p>Tamaño: {{raza.tamnyo}}</p><br>
+    <p>Caracteristica: {{raza.caracteristica}}</p><br>
+    <p>Actitud: {{raza.actitud}}</p><br>
+    <p>Longevidad: {{raza.longevidad}}</p><br>
+{% else %}
+    <p>No existe esta raza.</p>        
+{% endif %}
+
+{% endblock %}

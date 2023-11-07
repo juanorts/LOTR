@@ -14,7 +14,7 @@ class Raza(models.Model):
     # No es necesario crear un campo para la Primary Key, Django creará automáticamente un IntegerField.
     nombre = models.CharField(max_length=20)
     tamnyo = models.CharField(max_length=20)
-    aspecto = models.CharField(max_length=20)
+    caracteristica = models.CharField(max_length=20)
     actitud = models.CharField(max_length=20)
     longevidad = models.CharField(max_length=20)
     #Personaje promedio de la raza
