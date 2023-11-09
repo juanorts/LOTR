@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titulo %}Peliculas{% endblock %}
+
+{% block contenido %}
+<h2>Peliculas</h2>
+{% if lista_peliculas %}
+	<ul>
+	{% for p in lista_peliculas %}
+		<li>
+		    <a href="{% url 'detailPelicula' p.id %}">{{ p.titulo}}</a>
+		</li>
+
+	{% endfor %}
+	</ul>
+{% else %}
+<p>Error al cargar las peliculas</p>
+{% endif %}
+{% endblock %}
