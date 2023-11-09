@@ -6,31 +6,34 @@
 
 <h2>Datos del personaje</h2>
 
-{% if empleado %}
+{% if personaje %}
     <ul>
         <li>
-            {{ personaje.nombre}}
+            {{ personaje.nombre }}
         </li>
         <li>
-            {{ empleado.genero}}
+            {{ personaje.genero }}
         </li>
         <li>
-            {{ empleado.estatura}}
-        </li>
-        </li>
-        <li>
-            {{ empleado.colorOjos}}
+            {{ personaje.estatura }}
         </li>
         </li>
         <li>
-            {{ empleado.colorPelo}}
+            {{ personaje.colorOjos }}
         </li>
         </li>
         <li>
-            {{empleado.raza}}
+            {{ personaje.colorPelo }}
+        </li>
         </li>
         <li>
-            <a href="/appLOTR/peliculas/{{ personaje.pelicula.nombre }}">{{ personaje.pelicula}}</a>
+            {{ personaje.raza }}
+        </li>
+        <li>
+            <a href="/appLOTR/peliculas/{{ personaje.pelicula.id }}">{{ personaje.id }}</a>
         </li>
     </ul>
+{% else %}
+    <p>No existe ningún personaje asociado a este nombre.</p>
+{% endif %}
 {% endblock %}
