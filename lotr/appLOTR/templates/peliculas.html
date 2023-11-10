@@ -5,11 +5,11 @@
 {% block contenido %}
 <h2>Películas</h2>
 {% if lista_peliculas %}
-	<div id="listaPeliculas">
+	<div id="listado">
 	<ul>
 	{% for p in lista_peliculas %}
 		<li>
-		    <a href="{% url 'detailPelicula' p.id %}">{{ p.titulo}}</a>
+		    <a href="{% url 'pelicula' p.id %}">{{ p.titulo}}</a>
 		</li>
 
 	{% endfor %}

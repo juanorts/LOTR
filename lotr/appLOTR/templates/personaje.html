@@ -13,10 +13,10 @@
     <img id="imagenPersonaje" src="{% static personaje.imagen %}" alt="{{ personaje.nombre }}" width="300" height="200">
     <div id="caracteristicasPelicula">
         <p><strong>Género:</strong> {{ personaje.genero }}</p><br>
-        <p><strong>Estatura:</strong> {{ personaje.estatura }}</p><br>
+        <p><strong>Estatura:</strong> {{ personaje.estatura }} cm</p><br>
         <p><strong>Color de ojos:</strong> {{ personaje.colorOjos }}</p><br>
         <p><strong>Raza: </strong><a href="/appLOTR/razas/{{ personaje.raza.id }}">{{ personaje.raza }}</a></p><br>
-        <div id="listaPeliculas">
+        <div id="personajes">
         <h3>Peliculas en las que aparece el personaje:</h3>
         <ul>
         {% for pelicula in personaje.pelicula.all %}

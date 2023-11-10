@@ -8,8 +8,8 @@ h1 {
     background-color: #F1E9E7;
     color: rgb(94, 37, 0);
     text-align: center;
+    margin: 0;
     padding: 5px;
-    border-top: 2px solid rgb(94, 37, 0);
     border-bottom: 2px solid rgb(94, 37, 0);
 }
 
@@ -22,17 +22,28 @@ h2, h3, p{
     text-align: center;  
 }
 
+#navegador a {
+    color: rgb(121, 50, 2);
+    font-weight: bold;
+    padding: 10px;
+}
+#navegador {
+    text-align: center;
+    background-color: #decac6;
+    padding: 10px;
+}
+
 #descripcion{
     color: rgb(94, 37, 0);
 }
 
-#listaRazas, #personaje, #listaPersonajes, #pelicula{
+#listado, #personaje, #pelicula {
     text-align: center;
-    margin: 0 auto;
-    padding: 15px;
+    margin: 15px auto;
+    padding: 20px;
     background-color: #decac6;
     border-radius: 10px;
-    max-width: 20%;
+    max-width: 25%;
     box-shadow: 0px 0px 10px rgba(99, 37, 22, 0.6);
 }
 
@@ -40,7 +51,7 @@ h2, h3, p{
     font-size: 25px;
 }
 
-#nombre, #listaPeliculas, #caracteristicasRaza{
+#nombre, #listadoPeliculas, #caracteristicasRaza, #personajes {
     background-color: #c9b2ad;
     display: block;
     padding: 10px;
@@ -49,7 +60,7 @@ h2, h3, p{
 }
 
 
-#listaRazas, #listaRaza, #listaPersonajes, #listaPeliculas {
+#listaRazas, #listaRaza, #topPersonajes, #personajes, #listadoPeliculas {
 	text-align: center;
 }
 
@@ -58,7 +69,7 @@ ul, ol{
 	text-align: left; 
 }
 
-#imagenPersonaje, #caracteristicasRaza, #caracteristicasPelicula{
+.imagenPersonaje, #caracteristicasRaza, #caracteristicasPelicula{
     margin-bottom: 20px;
 }
 

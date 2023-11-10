@@ -8,6 +8,12 @@
     <body>
         <div id = "content">
             <h1>El Señor de los Anillos</h1>
+            <div id = "navegador">
+                <a href="{% url 'index' %}"> Inicio </a>
+                <a href="{% url 'peliculas' %}"> Películas </a>
+                <a href="{% url 'personajes' %}"> Personajes </a>
+                <a href="{% url 'razas' %}"> Razas </a>
+            </div>
             {% block contenido %}{% endblock %}
         </div>
     </body>

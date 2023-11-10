@@ -41,7 +41,7 @@ def show_pelicula(request, pelicula_id):
 			if peli.titulo == pelicula.titulo:
 				personajesPelicula.append(p)
 	context = {'pelicula': pelicula, 'personajes': personajesPelicula}
-	return render(request, 'detailPelicula.html', context)
+	return render(request, 'pelicula.html', context)
 
 def index(request):
 	personajes = get_list_or_404(Personaje.objects.order_by('raza'))
