@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block titulo %} Detalles del personaje {% endblock %}
+{% load static %}
+
+{% block contenido %}
+
+<h2>Datos del personaje</h2>
+
+<div id="personaje">
+{% if personaje %}
+    <h3 id="nombre">{{ personaje.nombre }}</h3>
+    <img id="imagenPersonaje" src="{% static personaje.imagen %}" alt="{{ personaje.nombre }}" width="300" height="200">
+    <div id="caracteristicas">
+        <p><strong>Género:</strong> {{ personaje.genero }}</p><br>
+        <p><strong>Estatura:</strong> {{ personaje.estatura }}</p><br>
+        <p><strong>Color de ojos:</strong> {{ personaje.colorOjos }}</p><br>
+        <p><strong>Raza: </strong><a href="/appLOTR/razas/{{ personaje.raza.id }}">{{ personaje.raza }}</a></p><br>
+        <div id="listaPeliculas">
+        <h3>Peliculas en las que aparece el personaje:</h3>
+        <ul>
+        {% for pelicula in personaje.pelicula.all %}
+            <li><a href="/appLOTR/peliculas/{{ pelicula.id }}">{{ pelicula.titulo }}</a></li>
+        {% endfor %}
+        </ul>
+        </div>
+    </div>
+</div>
+{% else %}
+    <p>No existe ningún personaje asociado a este nombre.</p>
+{% endif %}
+{% endblock %}

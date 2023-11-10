@@ -4,6 +4,7 @@
 {% block contenido %}
 <h2>Lista de personajes</h2>
 {% if personajes %}
+<div id="listaPersonajes">
     <ul>
         {% for p in personajes %}
             <li>
@@ -11,6 +12,7 @@
             </li>
         {% endfor %}
     </ul>
+</div>
 {% else %}
 <p>No hay personajes creados.</p>
 {% endif %}

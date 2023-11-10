@@ -3,8 +3,9 @@
 {% block titulo %}Peliculas{% endblock %}
 
 {% block contenido %}
-<h2>Peliculas</h2>
+<h2>Películas</h2>
 {% if lista_peliculas %}
+	<div id="listaPeliculas">
 	<ul>
 	{% for p in lista_peliculas %}
 		<li>
@@ -13,7 +14,8 @@
 
 	{% endfor %}
 	</ul>
+	</div>
 {% else %}
-<p>Error al cargar las peliculas</p>
+<p>Error al cargar las películas</p>
 {% endif %}
 {% endblock %}
