@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block titulo %} Personajes {% endblock %}
+
+{% block contenido %}
+<h2>Lista de personajes</h2>
+{% if personajes %}
+<div id="listado">
+    <ul>
+        {% for p in personajes %}
+            <li>
+                <a href="{%url 'personaje' p.id %}">{{p.nombre}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% else %}
+<p>No hay personajes creados.</p>
+{% endif %}
+{% endblock%}

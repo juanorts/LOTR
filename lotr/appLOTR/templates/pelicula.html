@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block titulo %} Detalles de la pelicula {% endblock %}
+{% load static %}
+
+{% block contenido %}
+<h2>Datos de la pelicula</h2>
+
+<div id="pelicula">
+{% if pelicula %}
+
+    <h3 id="nombre">{{ pelicula.titulo }}</h3>
+
+    <img id="imagenPelicula" src="{% static pelicula.imagen %}" alt="{{ pelicula.titulo }}" width="300" height="200">
+      
+    <p><strong>Año de estreno:</strong> {{ pelicula.anyo}}</p>
+ 
+    <p><strong>Director:</strong> {{ pelicula.director}}</p>
+   
+    <p><strong>Duración de la película:</strong> {{ pelicula.duracion}} mins</p>
+   
+    <p><strong>Género:</strong> {{ pelicula.genero}} </p>
+
+    <div id="listadoPeliculas">
+    <h3>Personajes que aparecen en la película:</h3>
+        
+        <ul>
+        {% if personajes %}
+            {% for p in personajes %}
+                <li>
+                    <a href="{% url 'personaje' p.id %}">{{p.nombre}}</a>
+                </li>
+            {% endfor %}
+        {% else %}
+            <p>La película no tiene personajes asociados.</p>
+        {% endif %}
+        </ul>
+    </div>
+</div>
+{% else %}
+    <p>No existe esta película.</p>
+{% endif %}
+
+{% endblock %}
