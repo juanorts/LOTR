@@ -7,32 +7,22 @@
 <h2>Datos del personaje</h2>
 
 {% if personaje %}
-    <ul>
-        <li>
-            {{ personaje.nombre }}
-        </li>
-        <li>
-            {{ personaje.genero }}
-        </li>
-        <li>
-            {{ personaje.estatura }}
-        </li>
-        </li>
-        <li>
-            {{ personaje.colorOjos }}
-        </li>
-        </li>
-        <li>
-            {{ personaje.colorPelo }}
-        </li>
-        </li>
-        <li>
-            {{ personaje.raza }}
-        </li>
-        <li>
-            <a href="/appLOTR/peliculas/{{ personaje.pelicula.id }}">{{ personaje.id }}</a>
-        </li>
-    </ul>
+    <p><strong>Nombre:</strong> {{ personaje.nombre }}</p>
+
+    <p><strong>Género:</strong> {{ personaje.genero }}</p>
+    
+    <p><strong>Estatura:</strong> {{ personaje.estatura }}</p>
+    
+    <p><strong>Color de ojos:</strong> {{ personaje.colorOjos }}</p>
+    
+    <p><strong>Color de pelo:</strong> {{ personaje.colorPelo }}</p>
+    
+    <p><strong>Raza: </strong><a href="/appLOTR/razas/{{ personaje.raza.id }}">{{ personaje.raza }}</a></p>
+
+    <h3>Peliculas en las que aparece el personaje:</h3>
+        {% for pelicula in personaje.pelicula.all %}
+            <li><a href="/appLOTR/peliculas/{{ pelicula.id }}">{{ pelicula.titulo }}</a></li>
+        {% endfor %}
 {% else %}
     <p>No existe ningún personaje asociado a este nombre.</p>
 {% endif %}
