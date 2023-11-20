@@ -30,7 +30,7 @@ class Personaje(models.Model):
     # Campo para la relación one-to-many (un empleado pertenece a una raza)
     raza = models.ForeignKey(Raza, on_delete=models.CASCADE)
     # Campo para la relación many-to-many (un personaje aparece en varias peliculas)
-    pelicula = models.ManyToManyField(Pelicula)
+    peliculas = models.ManyToManyField(Pelicula)
     nombre = models.CharField(max_length=50)
     genero = models.CharField(max_length=20)
     colorOjos = models.CharField(max_length=15)

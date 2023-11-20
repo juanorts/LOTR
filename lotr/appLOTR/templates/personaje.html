@@ -19,7 +19,7 @@
         <div id="personajes">
         <h3>Peliculas en las que aparece el personaje:</h3>
         <ul>
-        {% for pelicula in personaje.pelicula.all %}
+        {% for pelicula in personaje.peliculas.all %}
             <li><a href="/appLOTR/peliculas/{{ pelicula.id }}">{{ pelicula.titulo }}</a></li>
         {% endfor %}
         </ul>
