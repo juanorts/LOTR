@@ -73,6 +73,11 @@ ul, ol{
     margin-bottom: 20px;
 }
 
+.imagenPersonaje, #imagenPersonaje, #imagenRaza {
+    width: 300px;
+    height: 200px;
+}
+
 img{
     border-radius: 10px;
     max-width: 100%;
@@ -82,4 +87,5 @@ img{
     border-radius: 10px;
     max-width: 100%;
     height: auto;
+    width: 300px;
 }

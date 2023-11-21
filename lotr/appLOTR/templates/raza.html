@@ -9,7 +9,7 @@
 <div id="personaje">
 {% if raza %}
     <h3 id="nombre">{{ raza.nombre }}</h3>
-    <img id="imagenRaza" src="{% static raza.imagen %}" alt="{{ raza.nombre }}" width="300" height="200">
+    <img id="imagenRaza" src="{% static raza.imagen %}" alt="{{ raza.nombre }}">
     <h3>Lista de personajes</h3>
     {% if personajes %}
     <div id="listaRaza">

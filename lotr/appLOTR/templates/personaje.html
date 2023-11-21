@@ -10,7 +10,7 @@
 <div id="personaje">
 {% if personaje %}
     <h3 id="nombre">{{ personaje.nombre }}</h3>
-    <img id="imagenPersonaje" src="{% static personaje.imagen %}" alt="{{ personaje.nombre }}" width="300" height="200">
+    <img id="imagenPersonaje" src="{% static personaje.imagen %}" alt="{{ personaje.nombre }}">
     <div id="caracteristicasPelicula">
         <p><strong>Género:</strong> {{ personaje.genero }}</p><br>
         <p><strong>Estatura:</strong> {{ personaje.estatura }} cm</p><br>
