@@ -15,12 +15,12 @@
         <p><strong>Género:</strong> {{ personaje.genero }}</p><br>
         <p><strong>Estatura:</strong> {{ personaje.estatura }} cm</p><br>
         <p><strong>Color de ojos:</strong> {{ personaje.colorOjos }}</p><br>
-        <p><strong>Raza: </strong><a href="/appLOTR/razas/{{ personaje.raza.id }}">{{ personaje.raza }}</a></p><br>
+        <p><strong>Raza: </strong><a href="{% url 'raza' personaje.raza.id %}">{{ personaje.raza }}</a></p><br>
         <div id="personajes">
         <h3>Peliculas en las que aparece el personaje:</h3>
         <ul>
         {% for pelicula in personaje.peliculas.all %}
-            <li><a href="/appLOTR/peliculas/{{ pelicula.id }}">{{ pelicula.titulo }}</a></li>
+            <li><a href="{% url 'pelicula' pelicula.id %}">{{ pelicula.titulo }}</a></li>
         {% endfor %}
         </ul>
         </div>

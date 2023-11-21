@@ -15,7 +15,7 @@
     <div id="listaRaza">
         <ol>
             {% for p in personajes %}
-                <li><a href="/appLOTR/personajes/{{ p.id }}">{{ p.nombre }}</a></li>
+                <li><a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a></li>
             {% endfor %}
         </ol>
     </div>

@@ -12,7 +12,7 @@ def index_razas(request):
 
 def show_raza(request, raza_id):
     raza = get_object_or_404(Raza, pk=raza_id)
-    personajes = get_list_or_404(Personaje.objects.filter(raza_id=raza_id))
+    personajes = raza.personaje_set.all()
     context = {'raza': raza, 'personajes': personajes}
     return render(request, 'raza.html', context)
 
@@ -37,7 +37,7 @@ def show_pelicula(request, pelicula_id):
 	pelicula = get_object_or_404(Pelicula, pk=pelicula_id)
 	personajes = get_list_or_404(Personaje)
 	for p in personajes:
-		for peli in p.pelicula.all():
+		for peli in p.peliculas.all():
 			if peli.titulo == pelicula.titulo:
 				personajesPelicula.append(p)
 	context = {'pelicula': pelicula, 'personajes': personajesPelicula}
