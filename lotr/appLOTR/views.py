@@ -44,6 +44,8 @@ def show_pelicula(request, pelicula_id):
 	return render(request, 'pelicula.html', context)
 
 def index(request):
-	personajes = get_list_or_404(Personaje.objects.order_by('raza'))
-	context = {'lista_personajes': personajes }
+	personajesFiltrados = Personaje.objects.raw('SELECT * FROM appLOTR_personaje GROUP BY raza_id')
+	for p in personajesFiltrados:
+		print(p.raza_id)
+	context = {'lista_personajes': personajesFiltrados }
 	return render(request, 'index.html', context)

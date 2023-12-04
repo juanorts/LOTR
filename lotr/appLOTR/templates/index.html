@@ -7,23 +7,17 @@
 <h2>Bienvenido a la fansite del Señor de los Anillos.</h2>
 <p id="descripcion"><strong>Aquí encontrarás información sobre las películas, los personajes y sus razas.</strong></p>
 {% if lista_personajes %}
-    {% with contador=0 %}
-        <h3>A continuación tienes algunos de los personajes más importantes de la trilogia, cada uno de una raza única:</h3>
-        <div id="listado">
-        <ul>
-        {% for p in lista_personajes %}
-            {% if forloop.counter0|divisibleby:3 %}
-                <li>
-                    <a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a><br><br>
-                    <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
-                </li>
-            {% endif %}
-            {% with contador=contador|add:1 %}
-        {% endwith %}
-        {% endfor %}
-        </ul>
-        </div>
-    {% endwith %}
+    <h3>A continuación tienes algunos de los personajes más importantes de la trilogia, cada uno de una raza única:</h3>
+    <div id="listado">
+    <ul>
+    {% for p in lista_personajes %}
+        <li>
+            <a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a><br><br>
+            <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
+        </li>
+    {% endfor %}
+    </ul>
+    </div>
 {% else %}
     <p>No hay departamentos creados.</p>
 {% endif %}
