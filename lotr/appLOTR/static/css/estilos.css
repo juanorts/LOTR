@@ -1,40 +1,71 @@
+@font-face {
+    font-family: 'lotr';
+    src: url('../fonts/lotr.ttf') format('truetype');
+}
+
 body{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../img/mapa.jpeg');
     font-family: 'Tahoma', sans-serif;
-    background-color: #FCF6F4;
+    background-repeat: repeat;
+    background-size: contain;
     margin: 0;
 }
 
 h1 {
-    background-color: #F1E9E7;
-    color: rgb(94, 37, 0);
+    background-color: #36220f;
+    color: rgb(201, 197, 186);
     text-align: center;
     margin: 0;
-    padding: 5px;
-    border-bottom: 2px solid rgb(94, 37, 0);
+    padding: 20px;
+    border-bottom: 2px solid #3e2712da;
+    font-family: 'lotr';
+    font-size: 50px;
 }
 
 h2{
-    text-decoration: underline;
-    color: rgb(121, 50, 2);
+    text-decoration: none;
+    color: rgb(201, 197, 186);
+    font-family: 'lotr';
+    font-size: 30px;
+    text-align: center;
 }
 
 h2, h3, p{
     text-align: center;  
 }
 
-#navegador a {
-    color: rgb(121, 50, 2);
+h4 {
+    text-align: left;
+    margin: 10;
+    padding-left: 40px;
+    font-family: "Lucida Calligraphy", "Segoe Script", sans-serif;
+    font-size: 18px;
+    color: rgb(201, 197, 186);
     font-weight: bold;
-    padding: 10px;
 }
+
+#navegador a {
+    color: rgb(201, 197, 186);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'lotr';
+    padding: 10px;
+    text-decoration: none;
+}
+
 #navegador {
     text-align: center;
-    background-color: #decac6;
+    background-color: #3e2712da;
     padding: 10px;
 }
 
-#descripcion{
-    color: rgb(94, 37, 0);
+.descripcion{
+    color: rgb(201, 197, 186);
+    font-family: "Lucida Calligraphy", "Segoe Script", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 #listado, #personaje, #pelicula {
@@ -45,6 +76,17 @@ h2, h3, p{
     border-radius: 10px;
     max-width: 25%;
     box-shadow: 0px 0px 10px rgba(99, 37, 22, 0.6);
+}
+
+#listado h4 {
+    text-align: center;
+}
+
+#listado a {
+    text-decoration: none;
+    color: rgb(201, 197, 186);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #nombre{
@@ -76,6 +118,15 @@ ul, ol{
 .imagenPersonaje, #imagenPersonaje, #imagenRaza {
     width: 300px;
     height: 200px;
+}
+
+.intro {
+    background-color: #26401be6;
+    border: 0px ;
+    padding: 10px; 
+    border-radius: 5px;
+    width: 900px;
+    margin: 20px auto; 
 }
 
 img{
