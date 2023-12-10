@@ -5,14 +5,16 @@
 {% load static %}
 
 {% block contenido %}
-<h2>{% trans "Datos de la pelicula" %}</h2>
+
 
 <div id="pelicula">
 {% if pelicula %}
-
-    <h3 id="nombre">{{ pelicula.titulo }}</h3>
+    <h2>{% trans "Datos de la pelicula" %}</h2>
 
     <img id="imagenPelicula" src="{% static pelicula.imagen %}" alt="{{ pelicula.titulo }}">
+
+    <h3 id="nombre">{{ pelicula.titulo }}</h3>
+    
     <div id="datosPelicula">
         <p><strong>{% trans "Año de estreno" %}:</strong> {{ pelicula.anyo}}</p>
  

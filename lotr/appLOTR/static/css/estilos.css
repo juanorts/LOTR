@@ -12,6 +12,12 @@
     top: 30px;
     right: 45px;
     padding-left: 50px;
+
+}
+
+#flag-es, #flag-en, #flag-eus{
+    width: 50px;
+    height: 50px;
 }
 
 body{
@@ -87,7 +93,7 @@ h2, h3, p{
 
 h4, #inicioSesion {
     text-align: left;
-    margin: 10;
+    margin: 10px;
     padding-left: 40px;
     font-family: "Lucida Calligraphy", "Segoe Script", sans-serif;
     font-size: 18px;
@@ -119,7 +125,7 @@ h4, #inicioSesion {
     margin-right: 60px;
 }
 
-#listado, #personaje, #pelicula, #desPeliculas, #desPersonajes, #desRazas {
+ #personaje, #pelicula, #desPeliculas, #desPersonajes, #desRazas, #formulariosPersonaje {
     text-align: center;
     font-family: "Lucida Calligraphy", "Segoe Script", sans-serif;
     margin: 15px auto;
@@ -190,6 +196,7 @@ h4, #inicioSesion {
 
 #nombre{
     font-size: 25px;
+    color: rgb(201, 197, 186);
 }
 
 #pelicula h2 {
@@ -203,33 +210,29 @@ h4, #inicioSesion {
     font-family: 'lotr';
 }
 
-#datosPelicula p{
-    text-align: center;
-    font-size: 18px;
-    color: rgb(201, 197, 186);
-}
 
-#nombre, #listadoPeliculas, #caracteristicasRaza, #personajes {
-    background-color: #c9b2ad;
+#nombre, #caracteristicasRaza, #personajes, #datosPelicula, #caracteristicasPersonaje {
+    background-color: #143e02e6;
     display: block;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(99, 37, 22, 0.15);
+    color: rgb(201, 197, 186);
 }
 
 
-#listaRazas, #listaRaza, #topPersonajes, #personajes, #listadoPeliculas {
+#listaRazas, #listaRaza, #topPersonajes, #personajes, #listadoPeliculas, #listado {
 	text-align: center;
 }
 
-#listaRaza {
+#listaRaza, #listadoPeliculas, #personajes, #listado {
     background-color: #746345e6;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(99, 37, 22, 0.15);
     padding: 3px;
 }
 
-#listaRaza h3 {
+#listaRaza h3, #listadoPeliculas h3, #personajes h3, #listado h3{
     color: rgb(201, 197, 186);
     font-family: 'lotr';
     text-align: center;
@@ -237,7 +240,7 @@ h4, #inicioSesion {
     margin-bottom: 0;
 }
 
-#listaRaza li {
+#listaRaza li, #listadoPeliculas li, #personajes li, #listado li {
     list-style: circle;
     text-align: left;
     margin-left: -35px;
@@ -245,20 +248,20 @@ h4, #inicioSesion {
     padding: 2px;
 }
 
-#listaRaza a {
+#listaRaza a, #listadoPeliculas a, #personajes a, #listado a {
 
     color: rgb(201, 197, 186);
     text-decoration: none;
 }
 
-#personaje h2 {
+#personaje h2, #formulariosPersonaje h2 {
     background-color: #746345e6;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(99, 37, 22, 0.15);
     padding: 10px;
 }
 
-#personaje h3 {
+#personaje h3, #formulariosPersonaje h3 {
     font-family: 'lotr';
 }
 
@@ -294,7 +297,7 @@ ul, ol{
 	text-align: left; 
 }
 
-.imagenPersonaje, #caracteristicasRaza, #caracteristicasPelicula{
+.imagenPersonaje, #caracteristicasRaza, #caracteristicasPelicula, #datosPelicula, #caracteristicasPersonaje {
     margin-bottom: 20px;
 }
 
@@ -338,9 +341,7 @@ form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #c9b2ad;
+    background-color: #143e02e6;
     border-radius: 10px;
     text-align: center;
 
@@ -352,6 +353,7 @@ label {
     margin-bottom: 1px;
     font-family: 'lotr';
     font-size: 20px;
+    color: rgb(201, 197, 186);
 }
 
 /* Style form input fields */
@@ -376,14 +378,16 @@ input, select, textarea {
 #linkRegistro{
     font-family:'lotr';
     border-radius: 5px;
-    background-color: #c9b2ad;
+    background-color: #0d2801e6;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
+    color: rgb(201, 197, 186);
 }
 
 .textoRegistro{
     font-family: 'Tahoma', sans-serif;
+    color: rgb(201, 197, 186);
 }
 #mensajes{
     font-family: 'Tahoma', sans-serif;
@@ -391,8 +395,9 @@ input, select, textarea {
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
-    background-color: #777575;
+    background-color: #143e02e6;
     border-radius: 10px;
+    color: rgb(201, 197, 186);
     text-align: center;
 }
 
@@ -402,7 +407,8 @@ input, select, textarea {
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
-    background-color: #777575;
+    background-color: #143e02e6;
+    color: rgb(201, 197, 186);
     border-radius: 10px;
     text-align: center;
 }
@@ -416,4 +422,18 @@ input, select, textarea {
     cursor: pointer;
     font-family:'lotr';
     margin: 0 auto;
+}
+
+#avisoModificar {
+    color: red;
+}
+
+#listado {
+    text-align: center;
+    font-family: "Lucida Calligraphy", "Segoe Script", sans-serif;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #143e02e6;
+    border-radius: 10px;
+    max-width: 70%;
 }

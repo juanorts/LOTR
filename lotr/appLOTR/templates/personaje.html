@@ -9,28 +9,29 @@
 <div id="personaje">
 {% if personaje %}
     <h2>{% trans "Datos del personaje" %}</h2>
-    <h3 id="nombre">{{ personaje.nombre }}</h3>
     <img id="imagenPersonaje" src="{% static personaje.imagen %}" alt="{{ personaje.nombre }}">
-    <div id="caracteristicasPelicula">
+    <h3 id="nombre">{{ personaje.nombre }}</h3>
+    <div id="caracteristicasPersonaje">
         <p><strong>{% trans "Género" %}:</strong> {{ personaje.genero }}</p><br>
         <p><strong>{% trans "Estatura" %}:</strong> {{ personaje.estatura }} cm</p><br>
         <p><strong>{% trans "Color de ojos" %}:</strong> {{ personaje.colorOjos }}</p><br>
+        <p><strong>{% trans "Color de pelo" %}:</strong> {{ personaje.colorPelo }}</p><br>
         <p><strong>{% trans "Raza" %}: </strong><a href="{% url 'raza' personaje.raza.id %}">{{ personaje.raza }}</a></p><br>
-        <div id="personajes">
+    </div>
+    <div id="personajes">
         <h3>{% trans "Peliculas en las que aparece el personaje" %}:</h3>
         <ul>
         {% for pelicula in personaje.peliculas.all %}
             <li><a href="{% url 'pelicula' pelicula.id %}">{{ pelicula.titulo }}</a></li>
         {% endfor %}
         </ul>
-        </div>
-        <br>
-        {% if user.is_authenticated %}
-            <a href="{% url 'modificarPersonaje' personaje.id %}"> Modificar Personaje</a>
-        {% else %}
-            <p>Inicia sesion para modificar los personajes</p>
-        {% endif %}
     </div>
+    <br>
+    {% if user.is_authenticated %}
+        <a href="{% url 'modificarPersonaje' personaje.id %}"> {% trans "Modificar Personaje" %}</a>
+    {% else %}
+        <p id="avisoModificar">{% trans "Inicia sesion para modificar los personajes" %}</p>
+    {% endif %}
 </div>
 {% else %}
     <p>{% trans "No existe ningún personaje asociado a este nombre." %}</p>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 18:21+0100\n"
+"POT-Creation-Date: 2023-12-10 19:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr "Pertsonaiaren generoa"
 msgid "Color de ojos"
 msgstr "Begien kolorea"
 
-#: .\forms.py:17
+#: .\forms.py:17 .\templates\personaje.html:18
 msgid "Color de pelo"
 msgstr "Ile kolorea"
 
@@ -65,7 +65,7 @@ msgstr "Filmak"
 msgid "Personajes"
 msgstr "Pertsonaiak"
 
-#: .\templates\base.html:26
+#: .\templates\base.html:26 .\templates\razas.html:4 .\templates\razas.html:8
 msgid "Razas"
 msgstr "Arrazak"
 
@@ -137,6 +137,14 @@ msgstr ""
 msgid "Aquí tienes algunos de los personajes más relevantes"
 msgstr "Hemen dituzu pertsonaiarik garrantzitsuenetako batzuk"
 
+#: .\templates\modificarPersonaje.html:8 .\templates\personaje.html:30
+msgid "Modificar Personaje"
+msgstr "Pertsonaiak aldatu"
+
+#: .\templates\modificarPersonaje.html:14
+msgid "Actualizar"
+msgstr "Aldatu"
+
 #: .\templates\pelicula.html:8
 msgid "Datos de la pelicula"
 msgstr "Filmaren datuak"
@@ -174,13 +182,13 @@ msgid "Peliculas"
 msgstr "Filmak"
 
 #: .\templates\peliculas.html:9
-msgid "En este sección encontrarás las 3 películas del Señor de los Anillos."
+msgid "En esta sección encontrarás las 3 películas del Señor de los Anillos."
 msgstr "Ongi etorri Eraztunen Jaunaren zaleen orrialdera"
 
 #: .\templates\peliculas.html:10
 msgid ""
-"Clickando en el nombre de la que mas te guste encontrarás mas información de "
-"tu pelicula favorita."
+"Clickando en el nombre de la que mas te guste encontrarás más información de "
+"tu película favorita."
 msgstr ""
 "Gehien gustatzen zaizunaren izenean klik eginez, zure gogoko filmari buruzko "
 "informazio gehiago aurkituko duzu."
@@ -201,15 +209,19 @@ msgstr "Pertsonaiaren datuak"
 msgid "Estatura"
 msgstr "Garaiera"
 
-#: .\templates\personaje.html:18
+#: .\templates\personaje.html:19
 msgid "Raza"
 msgstr "Arraza"
 
-#: .\templates\personaje.html:20
+#: .\templates\personaje.html:21
 msgid "Peliculas en las que aparece el personaje"
 msgstr "Filmak non pertsonaia hau agertzen den"
 
-#: .\templates\personaje.html:36
+#: .\templates\personaje.html:32
+msgid "Inicia sesion para modificar los personajes"
+msgstr "Saioa hasi pertsonaiak aldatzeko"
+
+#: .\templates\personaje.html:37
 msgid "No existe ningún personaje asociado a este nombre."
 msgstr "Ez dago izen horrekin lotutako pertsonaiarik."
 
@@ -219,12 +231,12 @@ msgstr "Pertsonaien zerrenda"
 
 #: .\templates\personajes.html:8
 msgid ""
-"En este sección encontrarás todos los personajes del Señor de los Anillos."
+"En esta sección encontrarás todos los personajes del Señor de los Anillos."
 msgstr "Atal honetan Eraztunen Jauneko pertsonaia guztiak aurkituko dituzu."
 
 #: .\templates\personajes.html:9
 msgid ""
-"Clickando en el nombre de tu personaje favorito encontrarás mas información "
+"Clickando en el nombre de tu personaje favorito encontrarás más información "
 "sobre él."
 msgstr ""
 "Zure gogoko pertsonaiaren izenean klik eginez, berari buruzko informazio "
@@ -266,24 +278,21 @@ msgstr "Ez dago arraza honi lotutako pertsonairik."
 msgid "No existe esta raza."
 msgstr "Ez dago arraza hau."
 
-#: .\templates\razas.html:4 .\templates\razas.html:14
-msgid "Lista de razas"
-msgstr "Arrazen zerrenda"
-
 #: .\templates\razas.html:9
-#, fuzzy
-#| msgid "Bienvenido a la fansite del Señor de los Anillos"
-msgid "En este sección encontrarás todas las razas del Señor de los Anillos."
-msgstr "Ongi etorri Eraztunen Jaunaren zaleen orrialdera"
+msgid "En esta sección encontrarás todas las razas del Señor de los Anillos."
+msgstr "Atal honetan Eraztunen Jaunaren arrazak aurkituko dituzu."
 
 #: .\templates\razas.html:10
 msgid ""
-"Haciendo click en el nombre de tu raza favorita encontraras mas información "
+"Haciendo click en el nombre de tu raza favorita encontraras más información "
 "sobre ella."
 msgstr ""
 "Zure gustuko arrazaren izenean klik eginez, honen inguruko informazio "
 "gehiago aurkituko duzu."
 
-#: .\templates\razas.html:24
+#: .\templates\razas.html:23
 msgid "No hay razas creadas."
 msgstr "Ez da arrazarik sortu."
+
+#~ msgid "Lista de razas"
+#~ msgstr "Arrazen zerrenda"

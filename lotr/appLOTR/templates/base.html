@@ -9,9 +9,9 @@
     </head>
     <body>
         <div class="flag-container">
-            <img id="flag-es" src="{% static 'img/iconoEsp.png' %}" alt="Español" width = "50px" height= "50px">
-            <img id="flag-en" src="{% static 'img/iconoRU.png' %}" alt="English" width = "50px" height= "50px">
-            <img id="flag-eus" src="{% static 'img/iconoEus.png' %}" alt="Euskera" width = "50px" height= "50px">
+            <img id="flag-es" src="{% static 'img/iconoEsp.png' %}" alt="Español">
+            <img id="flag-en" src="{% static 'img/iconoRU.png' %}" alt="English">
+            <img id="flag-eus" src="{% static 'img/iconoEus.png' %}" alt="Euskera">
         </div>
         <div id = "content">
             <div id = "cabecero">
@@ -43,11 +43,12 @@
             {% block contenido %}
             {% endblock %}
         </div>
+    
+        <footer>
+            <div id="footer">
+                <p>{% trans "Pagina creada por el grupo 6" %}</p>
+                <p>{% trans "2023 - El Señor de los Anillos" %}</p>
+            </div>
+        </footer> 
     </body>
-    <footer>
-        <div id="footer">
-            <p>{% trans "Pagina creada por el grupo 6" %}</p>
-            <p>{% trans "2023 - El Señor de los Anillos" %}</p>
-        </div>
-    </footer> 
 </html>

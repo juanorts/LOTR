@@ -30,11 +30,10 @@ def registrar_usuario(request):
     if request.method == "POST":
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
-            usuario = form.cleaned_data['username']
-            contrasena1 = form.cleaned_data['password1']
-
-            user = authenticate(username=usuario, password1=contrasena1)
+            user = form.save()
+            #usuario = form.cleaned_data['username']
+            #contrasena1 = form.cleaned_data['password1']
+            
             login(request, user)
             messages.success(request, ("Usuario registrado con exito"))
             return redirect('index')

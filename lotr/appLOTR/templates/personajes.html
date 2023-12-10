@@ -5,18 +5,19 @@
 {% block contenido %}
 <div id = "desPersonajes">
     <h2>{% trans "Lista de personajes" %}</h2>
-    <p>{% trans "En este sección encontrarás todos los personajes del Señor de los Anillos." %}</p>
-    <p>{% trans "Clickando en el nombre de tu personaje favorito encontrarás mas información sobre él." %}</p>
-</div>
-{% if personajes %}
-<div id="listado">
-    <ul>
-        {% for p in personajes %}
-            <li>
-                <a href="{%url 'personaje' p.id %}">{{p.nombre}}</a>
-            </li>
-        {% endfor %}
-    </ul>
+    <p>{% trans "En esta sección encontrarás todos los personajes del Señor de los Anillos." %}</p>
+    <p>{% trans "Clickando en el nombre de tu personaje favorito encontrarás más información sobre él." %}</p>
+
+    {% if personajes %}
+    <div id="listado">
+        <ul>
+            {% for p in personajes %}
+                <li>
+                    <a href="{%url 'personaje' p.id %}">{{p.nombre}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 {% else %}
 <p>{% trans "No hay personajes creados." %}</p>

@@ -5,7 +5,6 @@
 {% block titulo %} {% trans "Detalles de la raza" %} {% endblock %}
 
 {% block contenido %}
-<h2>Datos de la raza</h2>
 
 <div id="personaje">
 {% if raza %}
@@ -14,7 +13,7 @@
     <h3 id="nombre">{{ raza.nombre }}</h3>
 
     <div id="caracteristicasRaza">
-        <p><strong>{% trans "Tamaño:" %}</strong> {{raza.tamnyo}}</p><br>
+        <p><strong>{% trans "Tamaño:" %}</strong> {{raza.tamanyo}}</p><br>
         <p><strong>{% trans "Característica:" %}</strong> {{raza.caracteristica}}</p><br>
         <p><strong>{% trans "Actitud:" %}</strong> {{raza.actitud}}</p><br>
         <p><strong>{% trans "Longevidad:" %}</strong> {{raza.longevidad}}</p><br>
@@ -23,11 +22,11 @@
     {% if personajes %}
     <div id="listaRaza">
         <h3>{% trans "Lista de personajes" %}</h3>
-        <ol>
+        <ul>
             {% for p in personajes %}
                 <li><a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a></li>
             {% endfor %}
-        </ol>
+        </ul>
     </div>
     {% else %}
         <p>{% trans "No hay personajes asociados a esta raza." %}</p>

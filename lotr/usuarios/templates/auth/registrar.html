@@ -5,24 +5,26 @@
 {% load i18n %}
 
 {% block contenido %}
+<div class = "intro">
+    <h2>{% trans "Registro de Usuario" %}</h2>
+    {% if form.errors %}
+        <p id="mensajesRegistro"><strong>{% trans "Ha habido algun problema con el registro, pruebalo otra vez" %}</strong></p>
+        <br>
+    {% endif %}
 
-<h2>{% trans "Registro de Usuario" %}</h2>
-{% if form.errors %}
-    <p id="mensajesRegistro"><strong>{% trans "Ha habido algun problema con el registro, pruebalo otra vez" %}</strong></p>
+    <form action="{% url 'registrar_usuario' %}" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <p class="textoRegistro">
+            <strong>{% trans "Tu contraseña debe cumplir con los siguientes requisitos:" %}</strong> <br>
+            {% trans "Al menos 8 caracteres" %} <br>
+            {% trans "No demasiado similar a tu otra información personal" %} <br>
+            {% trans "No una contraseña comúnmente utilizada" %} <br>
+            {% trans "No completamente numérica" %}</p>
+        <input class="botonesFormularios" type="submit" value='{% trans "Registrar" %}'> 
+    </form>
     <br>
-{% endif %}
-
-<form action="{% url 'registrar_usuario' %}" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <p class="textoRegistro">
-        <strong>{% trans "Tu contraseña debe cumplir con los siguientes requisitos:" %}</strong> <br>
-        {% trans "Al menos 8 caracteres" %} <br>
-        {% trans "No demasiado similar a tu otra información personal" %} <br>
-        {% trans "No una contraseña comúnmente utilizada" %} <br>
-        {% trans "No completamente numérica" %}</p>
-    <input class="botonesFormularios" type="submit" value="Registrar">
-
-</form>
+</div>
+<br>
 
 {% endblock %}

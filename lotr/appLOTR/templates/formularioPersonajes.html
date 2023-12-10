@@ -5,25 +5,26 @@
 {% block titulo %}El Señor de los Anillos {% endblock %}
 
 {% block contenido %}
-<h2>{% trans "Añadir Personaje" %}</h2>
+<div id="formulariosPersonaje">
+    <h2>{% trans "Añadir Personaje" %}</h2>
+    {% if enviado %}
+        <p id="personajeAnyadido">{% trans "El personaje se ha añadido correctamente" %}</p>
+    {% else %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
 
-{% if enviado %}
-    <p id="personajeAnyadido">{% trans "El personaje se ha añadido correctamente" %}</p>
-{% else %}
-    <form method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-
-        {{form.as_p}}
+            {{form.as_p}}
+            {% if user.is_authenticated %}
+                <input type="submit" value='{% trans "Añadir Personaje" %}' class="botonesFormularios">
+            {% else %}
+                <input type="submit" value='{% trans "Añadir Personaje" %}' class="botonesFormulariosDesabilitado" disabled>
+            {% endif %}
+        </form>
         {% if user.is_authenticated %}
-            <input type="submit" value='{% trans "Añadir Personaje" %}' class="botonesFormularios">
         {% else %}
-            <input type="submit" value='{% trans "Añadir Personaje" %}' class="botonesFormulariosDesabilitado" disabled>
-            <p>{% trans "Inicia sesion para añadir mas personajes" %}</p>
+            <p id="avisoModificar">{% trans "Inicia sesion para añadir personajes" %}</p>
         {% endif %}
-
-        
-
-    </form>
+</div>
 
 {% endif %}
 

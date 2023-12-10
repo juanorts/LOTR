@@ -6,18 +6,18 @@
 {% block contenido %}
 <div id = "desRazas">
 	<h2>{% trans "Razas" %}</h2>
-	<p>{% trans "En este sección encontrarás todas las razas del Señor de los Anillos." %}</p>
-	<p>{% trans "Haciendo click en el nombre de tu raza favorita encontraras mas información sobre ella." %}</p>
-</div>
-{% if razas %}
-<div id="listado">
-	<ul>
-	{% for r in razas %}
-		<li>
-			<a href="{%url 'raza' r.id %}">{{ r.nombre}}</a>
-		</li>
-	{% endfor %}
-	</ul>
+	<p>{% trans "En esta sección encontrarás todas las razas del Señor de los Anillos." %}</p>
+	<p>{% trans "Haciendo click en el nombre de tu raza favorita encontraras más información sobre ella." %}</p>
+	{% if razas %}
+	<div id="listado">
+		<ul>
+		{% for r in razas %}
+			<li>
+				<a href="{%url 'raza' r.id %}">{{ r.nombre}}</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
 </div>
 {% else %}
 <p>{% trans "No hay razas creadas." %}</p>

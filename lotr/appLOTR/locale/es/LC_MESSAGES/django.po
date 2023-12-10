@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 18:21+0100\n"
+"POT-Creation-Date: 2023-12-10 19:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Color de ojos"
 msgstr ""
 
-#: .\forms.py:17
+#: .\forms.py:17 .\templates\personaje.html:18
 msgid "Color de pelo"
 msgstr ""
 
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Personajes"
 msgstr ""
 
-#: .\templates\base.html:26
+#: .\templates\base.html:26 .\templates\razas.html:4 .\templates\razas.html:8
 msgid "Razas"
 msgstr ""
 
@@ -133,6 +133,14 @@ msgstr ""
 msgid "Aquí tienes algunos de los personajes más relevantes"
 msgstr ""
 
+#: .\templates\modificarPersonaje.html:8 .\templates\personaje.html:30
+msgid "Modificar Personaje"
+msgstr ""
+
+#: .\templates\modificarPersonaje.html:14
+msgid "Actualizar"
+msgstr ""
+
 #: .\templates\pelicula.html:8
 msgid "Datos de la pelicula"
 msgstr ""
@@ -170,13 +178,13 @@ msgid "Peliculas"
 msgstr ""
 
 #: .\templates\peliculas.html:9
-msgid "En este sección encontrarás las 3 películas del Señor de los Anillos."
+msgid "En esta sección encontrarás las 3 películas del Señor de los Anillos."
 msgstr ""
 
 #: .\templates\peliculas.html:10
 msgid ""
-"Clickando en el nombre de la que mas te guste encontrarás mas información de "
-"tu pelicula favorita."
+"Clickando en el nombre de la que mas te guste encontrarás más información de "
+"tu película favorita."
 msgstr ""
 
 #: .\templates\peliculas.html:24
@@ -195,15 +203,19 @@ msgstr ""
 msgid "Estatura"
 msgstr ""
 
-#: .\templates\personaje.html:18
+#: .\templates\personaje.html:19
 msgid "Raza"
 msgstr ""
 
-#: .\templates\personaje.html:20
+#: .\templates\personaje.html:21
 msgid "Peliculas en las que aparece el personaje"
 msgstr ""
 
-#: .\templates\personaje.html:36
+#: .\templates\personaje.html:32
+msgid "Inicia sesion para modificar los personajes"
+msgstr ""
+
+#: .\templates\personaje.html:37
 msgid "No existe ningún personaje asociado a este nombre."
 msgstr ""
 
@@ -213,12 +225,12 @@ msgstr ""
 
 #: .\templates\personajes.html:8
 msgid ""
-"En este sección encontrarás todos los personajes del Señor de los Anillos."
+"En esta sección encontrarás todos los personajes del Señor de los Anillos."
 msgstr ""
 
 #: .\templates\personajes.html:9
 msgid ""
-"Clickando en el nombre de tu personaje favorito encontrarás mas información "
+"Clickando en el nombre de tu personaje favorito encontrarás más información "
 "sobre él."
 msgstr ""
 
@@ -258,20 +270,16 @@ msgstr ""
 msgid "No existe esta raza."
 msgstr ""
 
-#: .\templates\razas.html:4 .\templates\razas.html:14
-msgid "Lista de razas"
-msgstr ""
-
 #: .\templates\razas.html:9
-msgid "En este sección encontrarás todas las razas del Señor de los Anillos."
+msgid "En esta sección encontrarás todas las razas del Señor de los Anillos."
 msgstr ""
 
 #: .\templates\razas.html:10
 msgid ""
-"Haciendo click en el nombre de tu raza favorita encontraras mas información "
+"Haciendo click en el nombre de tu raza favorita encontraras más información "
 "sobre ella."
 msgstr ""
 
-#: .\templates\razas.html:24
+#: .\templates\razas.html:23
 msgid "No hay razas creadas."
 msgstr ""

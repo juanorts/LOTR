@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 17:17+0100\n"
+"POT-Creation-Date: 2023-12-10 19:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "Erabiltzaile izena"
 msgid "Correo electrónico"
 msgstr "Posta elektronikoa"
 
-#: .\forms.py:13
+#: .\forms.py:13 .\templates\auth\login.html:24
 msgid "Contraseña"
 msgstr "Pasahitza"
 
@@ -48,6 +48,10 @@ msgid ""
 msgstr ""
 "Sortu kontu bat Eraztunen Jaunaren pertsonaiak gehitzeko eta aldatzeko "
 "aukera izateko"
+
+#: .\templates\auth\login.html:18
+msgid "Usuario"
+msgstr "Erabiltzailea"
 
 #: .\templates\auth\login.html:30
 msgid "Si no tienes cuenta regístrate"
@@ -87,15 +91,13 @@ msgstr "Ez izan ohiko erabiltzen den pasahitza"
 msgid "No completamente numérica"
 msgstr "Ez izan erabat zenbakizkoa"
 
+#: .\templates\auth\registrar.html:24
+msgid "Registrar"
+msgstr "Erregistratu"
+
 #: .\views.py:26
 msgid "Sesión cerrada con éxito"
 msgstr "Saioa arrakastaz itxi da."
 
 #~ msgid "Ingresa la misma contraseña que antes, para verificación."
 #~ msgstr "Sartu aurretik berdina izan zen pasahitza, egiaztapenerako."
-
-#~ msgid "Usuario"
-#~ msgstr "Erabiltzailea"
-
-#~ msgid "Registrar"
-#~ msgstr "Erregistratu"

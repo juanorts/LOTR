@@ -17,9 +17,10 @@
         <h4>{% trans "Aquí tienes algunos de los personajes más relevantes" %}</h4>
         <ul>
             {% for p in lista_personajes %}
-                <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
                 <li>
                     <a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a><br><br>
+                    <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
+                    
                 </li>
             {% endfor %}
         </ul>

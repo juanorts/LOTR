@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 18:21+0100\n"
+"POT-Creation-Date: 2023-12-10 19:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr "Character's genre"
 msgid "Color de ojos"
 msgstr "Eye color"
 
-#: .\forms.py:17
+#: .\forms.py:17 .\templates\personaje.html:18
 msgid "Color de pelo"
 msgstr "Hair color"
 
@@ -66,7 +66,7 @@ msgstr "Films"
 msgid "Personajes"
 msgstr "Characters"
 
-#: .\templates\base.html:26
+#: .\templates\base.html:26 .\templates\razas.html:4 .\templates\razas.html:8
 msgid "Razas"
 msgstr "Races"
 
@@ -87,10 +87,8 @@ msgid "Pagina creada por el grupo 6"
 msgstr "Page created by group 6"
 
 #: .\templates\base.html:50
-#, fuzzy
-#| msgid "El Señor de los Anillos"
 msgid "2023 - El Señor de los Anillos"
-msgstr "Lord of the Rings"
+msgstr "2023 - Lord of the Rings"
 
 #: .\templates\formularioPersonajes.html:8
 #: .\templates\formularioPersonajes.html:18
@@ -140,6 +138,14 @@ msgstr ""
 msgid "Aquí tienes algunos de los personajes más relevantes"
 msgstr "Here you have the most relevant characters"
 
+#: .\templates\modificarPersonaje.html:8 .\templates\personaje.html:30
+msgid "Modificar Personaje"
+msgstr "Modify character"
+
+#: .\templates\modificarPersonaje.html:14
+msgid "Actualizar"
+msgstr "Modify"
+
 #: .\templates\pelicula.html:8
 msgid "Datos de la pelicula"
 msgstr "Movie details"
@@ -177,15 +183,13 @@ msgid "Peliculas"
 msgstr "Movies"
 
 #: .\templates\peliculas.html:9
-#, fuzzy
-#| msgid "Bienvenido a la fansite del Señor de los Anillos"
-msgid "En este sección encontrarás las 3 películas del Señor de los Anillos."
-msgstr "Welcome to the fansite of Lord of the Rings"
+msgid "En esta sección encontrarás las 3 películas del Señor de los Anillos."
+msgstr "In this section you will find the 3 movies of the Lord of the Rings."
 
 #: .\templates\peliculas.html:10
 msgid ""
-"Clickando en el nombre de la que mas te guste encontrarás mas información de "
-"tu pelicula favorita."
+"Clickando en el nombre de la que mas te guste encontrarás más información de "
+"tu película favorita."
 msgstr ""
 "By clicking on the name of the one you like the most, you will find more "
 "information about your favorite movie."
@@ -206,15 +210,19 @@ msgstr "Character details"
 msgid "Estatura"
 msgstr "Height"
 
-#: .\templates\personaje.html:18
+#: .\templates\personaje.html:19
 msgid "Raza"
 msgstr "Race"
 
-#: .\templates\personaje.html:20
+#: .\templates\personaje.html:21
 msgid "Peliculas en las que aparece el personaje"
 msgstr "Movies in which the character appears"
 
-#: .\templates\personaje.html:36
+#: .\templates\personaje.html:32
+msgid "Inicia sesion para modificar los personajes"
+msgstr "Log in to modify the characters"
+
+#: .\templates\personaje.html:37
 msgid "No existe ningún personaje asociado a este nombre."
 msgstr "There is not any character related to this name."
 
@@ -224,13 +232,13 @@ msgstr "Characters"
 
 #: .\templates\personajes.html:8
 msgid ""
-"En este sección encontrarás todos los personajes del Señor de los Anillos."
+"En esta sección encontrarás todos los personajes del Señor de los Anillos."
 msgstr ""
 "In this section, you will find all the characters from The Lord of the Rings."
 
 #: .\templates\personajes.html:9
 msgid ""
-"Clickando en el nombre de tu personaje favorito encontrarás mas información "
+"Clickando en el nombre de tu personaje favorito encontrarás más información "
 "sobre él."
 msgstr ""
 "Clicking on the name of your favorite character, you will find more "
@@ -272,22 +280,21 @@ msgstr "There are no related characters with this race."
 msgid "No existe esta raza."
 msgstr "This race does not exist."
 
-#: .\templates\razas.html:4 .\templates\razas.html:14
-msgid "Lista de razas"
-msgstr "Races"
-
 #: .\templates\razas.html:9
-msgid "En este sección encontrarás todas las razas del Señor de los Anillos."
+msgid "En esta sección encontrarás todas las razas del Señor de los Anillos."
 msgstr "Welcome to the fansite of Lord of the Rings."
 
 #: .\templates\razas.html:10
 msgid ""
-"Haciendo click en el nombre de tu raza favorita encontraras mas información "
+"Haciendo click en el nombre de tu raza favorita encontraras más información "
 "sobre ella."
 msgstr ""
 "By clicking on the name of your favorite race, you will find more "
 "information about it."
 
-#: .\templates\razas.html:24
+#: .\templates\razas.html:23
 msgid "No hay razas creadas."
 msgstr "There are not created races."
+
+#~ msgid "Lista de razas"
+#~ msgstr "Races"

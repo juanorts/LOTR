@@ -6,20 +6,21 @@
 {% block contenido %}
 <div id = "desPeliculas">
 	<h2>{% trans "Películas" %}</h2>
-	<p>{% trans "En este sección encontrarás las 3 películas del Señor de los Anillos." %}</p>
-	<p>{% trans "Clickando en el nombre de la que mas te guste encontrarás mas información de tu pelicula favorita." %}</p>
-</div>
+	<p>{% trans "En esta sección encontrarás las 3 películas del Señor de los Anillos." %}</p>
+	<p>{% trans "Clickando en el nombre de la que mas te guste encontrarás más información de tu película favorita." %}</p>
+
 {% if lista_peliculas %}
 	<div id="listado">
-	<ul>
-	{% for p in lista_peliculas %}
-		<li>
-		    <a href="{% url 'pelicula' p.id %}">{{ p.titulo}}</a>
-		</li>
+		<ul>
+		{% for p in lista_peliculas %}
+			<li>
+				<a href="{% url 'pelicula' p.id %}">{{ p.titulo}}</a>
+			</li>
 
-	{% endfor %}
-	</ul>
+		{% endfor %}
+		</ul>
 	</div>
+</div>
 {% else %}
 <p>{% trans "Error al cargar las películas" %}</p>
 {% endif %}

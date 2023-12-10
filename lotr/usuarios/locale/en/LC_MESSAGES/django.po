@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 17:17+0100\n"
+"POT-Creation-Date: 2023-12-10 19:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "Username"
 msgid "Correo electrónico"
 msgstr "Email address"
 
-#: .\forms.py:13
+#: .\forms.py:13 .\templates\auth\login.html:24
 msgid "Contraseña"
 msgstr "Password"
 
@@ -49,6 +49,10 @@ msgid ""
 msgstr ""
 "Create an account to be able to add and modify characters from The Lord of "
 "the Rings"
+
+#: .\templates\auth\login.html:18
+msgid "Usuario"
+msgstr "Username"
 
 #: .\templates\auth\login.html:30
 msgid "Si no tienes cuenta regístrate"
@@ -86,15 +90,13 @@ msgstr "Not a commonly used password"
 msgid "No completamente numérica"
 msgstr "Not entirely numeric"
 
+#: .\templates\auth\registrar.html:24
+msgid "Registrar"
+msgstr "Register"
+
 #: .\views.py:26
 msgid "Sesión cerrada con éxito"
 msgstr "Session successfully closed."
 
 #~ msgid "Ingresa la misma contraseña que antes, para verificación."
 #~ msgstr "Enter the same password as before, for verification."
-
-#~ msgid "Usuario"
-#~ msgstr "User"
-
-#~ msgid "Registrar"
-#~ msgstr "Register"
