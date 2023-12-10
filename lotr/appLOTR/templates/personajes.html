@@ -1,23 +1,24 @@
 {% extends "base.html" %}
-{% block titulo %} Personajes {% endblock %}
+{% load static i18n %}
+{% block titulo %} {% trans "Personajes" %} {% endblock %}
 
 {% block contenido %}
 <div id = "desPersonajes">
-    <h2>Personajes</h2>
-    <p> En este sección encontraras todos los personajes del Señor de los Anillos.</p>
-    <p>Clicando en el nombre de tu personaje favorito encontraras mas información sobre el.</p>
+    <h2>{% trans "Lista de personajes" %}</h2>
+    <p>{% trans "En este sección encontrarás todos los personajes del Señor de los Anillos." %}</p>
+    <p>{% trans "Clickando en el nombre de tu personaje favorito encontrarás mas información sobre él." %}</p>
 </div>
 {% if personajes %}
 <div id="listado">
     <ul>
         {% for p in personajes %}
             <li>
-                <a href="{%url 'personaje' p.id %}">{{p.nombre}}</a> 
+                <a href="{%url 'personaje' p.id %}">{{p.nombre}}</a>
             </li>
         {% endfor %}
     </ul>
 </div>
 {% else %}
-<p>No hay personajes creados.</p>
+<p>{% trans "No hay personajes creados." %}</p>
 {% endif %}
 {% endblock%}

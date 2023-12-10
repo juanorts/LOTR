@@ -1,12 +1,13 @@
 {% extends "base.html" %}
+{% load static i18n %}
 
-{% block titulo %}Peliculas{% endblock %}
+{% block titulo %}{% trans "Peliculas" %}{% endblock %}
 
 {% block contenido %}
 <div id = "desPeliculas">
-	<h2>Películas</h2>
-	<p> En este sección encontraras las 3 peliculas del Señor de los Anillos.</p>
-	<p>Clicando en el nombre de la que mas te guste encontraras mas información de tu pelicula favorita.</p>
+	<h2>{% trans "Películas" %}</h2>
+	<p>{% trans "En este sección encontrarás las 3 películas del Señor de los Anillos." %}</p>
+	<p>{% trans "Clickando en el nombre de la que mas te guste encontrarás mas información de tu pelicula favorita." %}</p>
 </div>
 {% if lista_peliculas %}
 	<div id="listado">
@@ -20,6 +21,6 @@
 	</ul>
 	</div>
 {% else %}
-<p>Error al cargar las películas</p>
+<p>{% trans "Error al cargar las películas" %}</p>
 {% endif %}
 {% endblock %}

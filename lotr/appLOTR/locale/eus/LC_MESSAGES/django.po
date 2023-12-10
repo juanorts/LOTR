@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-10 18:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\forms.py:12
+msgid "Raza del Personaje"
+msgstr "Pertsonaiaren arraza"
+
+#: .\forms.py:13
+msgid "Peliculas en las que ha aparecido"
+msgstr "Filmak non pertsonaia hau agertzen den"
+
+#: .\forms.py:14
+msgid "Nombre del Personaje"
+msgstr "Pertsonaiaren izena"
+
+#: .\forms.py:15
+msgid "Genero del Personaje"
+msgstr "Pertsonaiaren generoa"
+
+#: .\forms.py:16 .\templates\personaje.html:17
+msgid "Color de ojos"
+msgstr "Begien kolorea"
+
+#: .\forms.py:17
+msgid "Color de pelo"
+msgstr "Ile kolorea"
+
+#: .\forms.py:18
+msgid "Estatura en cm"
+msgstr "Altuera zmtan"
+
+#: .\forms.py:19
+msgid "Imagen"
+msgstr "Argazkia"
+
+#: .\templates\base.html:8 .\templates\base.html:18 .\templates\index.html:5
+msgid "El Señor de los Anillos"
+msgstr "Eraztunen Jauna"
+
+#: .\templates\base.html:23
+msgid "Inicio"
+msgstr "Hasiera-orria"
+
+#: .\templates\base.html:24 .\templates\peliculas.html:8
+msgid "Películas"
+msgstr "Filmak"
+
+#: .\templates\base.html:25 .\templates\personajes.html:3
+msgid "Personajes"
+msgstr "Pertsonaiak"
+
+#: .\templates\base.html:26
+msgid "Razas"
+msgstr "Arrazak"
+
+#: .\templates\base.html:27
+msgid "Añadir personajes"
+msgstr "Pertsonaiak gehitu"
+
+#: .\templates\base.html:29
+msgid "Cerrar sesión"
+msgstr "Saioa itxi"
+
+#: .\templates\base.html:31
+msgid "Iniciar sesión"
+msgstr "Saioa hasi"
+
+#: .\templates\base.html:49
+msgid "Pagina creada por el grupo 6"
+msgstr "6. taldeak sortutako orrialdea"
+
+#: .\templates\base.html:50
+msgid "2023 - El Señor de los Anillos"
+msgstr "2023 - Eraztunen Jauna"
+
+#: .\templates\formularioPersonajes.html:8
+#: .\templates\formularioPersonajes.html:18
+#: .\templates\formularioPersonajes.html:20
+msgid "Añadir Personaje"
+msgstr "Pertsonaiak gehitu"
+
+#: .\templates\formularioPersonajes.html:11
+msgid "El personaje se ha añadido correctamente"
+msgstr "Pertsonaia ondo gehitu da"
+
+#: .\templates\formularioPersonajes.html:21
+msgid "Inicia sesion para añadir mas personajes"
+msgstr "Saioa hasi pertsonai gehiago gehitzeko"
+
+#: .\templates\index.html:9
+msgid "Bienvenido a la fansite del Señor de los Anillos"
+msgstr "Ongi etorri Eraztunen Jaunaren zaleen orrialdera"
+
+#: .\templates\index.html:10
+msgid "¿Qué puedo encontrar en esta página web?"
+msgstr "Zer aurki dezaket web orri honetan?"
+
+#: .\templates\index.html:11
+msgid ""
+"Aquí encontrarás toda la información sobre el mundo cinematografico, de la "
+"mejor saga del mundo. Podras acceder a la mejor información sobre las "
+"peliculas, los personajes de estas e incluso sus razas."
+msgstr ""
+"Hemen munduko sagarik onenaren zinemaren munduari buruzko informazio guztia "
+"aurkituko duzu. Filmak, haien pertsonaiak eta baita haien arrazak buruzko "
+"informazio onena eskura dezakezu."
+
+#: .\templates\index.html:12
+msgid "¿Quienes han creado esta pagina?"
+msgstr "Nork sortu du orri hau?"
+
+#: .\templates\index.html:13
+msgid ""
+"Los creadores somos unos estudiantes a los que nos encanta LOTR y que "
+"queremos ofrecer la mejor pagina web para todos los fans del mundo"
+msgstr ""
+"Sortzaileak LOTR maite dugun ikasle batzuk gara eta mundu osoko zaleentzako "
+"web orri onena eskaini nahi dugu"
+
+#: .\templates\index.html:17
+msgid "Aquí tienes algunos de los personajes más relevantes"
+msgstr "Hemen dituzu pertsonaiarik garrantzitsuenetako batzuk"
+
+#: .\templates\pelicula.html:8
+msgid "Datos de la pelicula"
+msgstr "Filmaren datuak"
+
+#: .\templates\pelicula.html:17
+msgid "Año de estreno"
+msgstr "Estreinaldi urtea"
+
+#: .\templates\pelicula.html:19
+msgid "Director"
+msgstr "Zuzendaria"
+
+#: .\templates\pelicula.html:21
+msgid "Duración de la película"
+msgstr "Filmaren iraupena"
+
+#: .\templates\pelicula.html:23 .\templates\personaje.html:15
+msgid "Género"
+msgstr "Generoa"
+
+#: .\templates\pelicula.html:27
+msgid "Personajes que aparecen en la película"
+msgstr "Filman agertzen diren pertsonaiak"
+
+#: .\templates\pelicula.html:37
+msgid "La película no tiene personajes asociados."
+msgstr "Filma honek ez du pertsonaiarik lotuta."
+
+#: .\templates\pelicula.html:43
+msgid "No existe esta película."
+msgstr "Ez dago film hau."
+
+#: .\templates\peliculas.html:4
+msgid "Peliculas"
+msgstr "Filmak"
+
+#: .\templates\peliculas.html:9
+msgid "En este sección encontrarás las 3 películas del Señor de los Anillos."
+msgstr "Ongi etorri Eraztunen Jaunaren zaleen orrialdera"
+
+#: .\templates\peliculas.html:10
+msgid ""
+"Clickando en el nombre de la que mas te guste encontrarás mas información de "
+"tu pelicula favorita."
+msgstr ""
+"Gehien gustatzen zaizunaren izenean klik eginez, zure gogoko filmari buruzko "
+"informazio gehiago aurkituko duzu."
+
+#: .\templates\peliculas.html:24
+msgid "Error al cargar las películas"
+msgstr "Akatsa filmak kargatzerakoan"
+
+#: .\templates\personaje.html:4
+msgid "Detalles del personaje"
+msgstr "Pertsonaiaren xehetasunak"
+
+#: .\templates\personaje.html:11
+msgid "Datos del personaje"
+msgstr "Pertsonaiaren datuak"
+
+#: .\templates\personaje.html:16
+msgid "Estatura"
+msgstr "Garaiera"
+
+#: .\templates\personaje.html:18
+msgid "Raza"
+msgstr "Arraza"
+
+#: .\templates\personaje.html:20
+msgid "Peliculas en las que aparece el personaje"
+msgstr "Filmak non pertsonaia hau agertzen den"
+
+#: .\templates\personaje.html:36
+msgid "No existe ningún personaje asociado a este nombre."
+msgstr "Ez dago izen horrekin lotutako pertsonaiarik."
+
+#: .\templates\personajes.html:7 .\templates\raza.html:25
+msgid "Lista de personajes"
+msgstr "Pertsonaien zerrenda"
+
+#: .\templates\personajes.html:8
+msgid ""
+"En este sección encontrarás todos los personajes del Señor de los Anillos."
+msgstr "Atal honetan Eraztunen Jauneko pertsonaia guztiak aurkituko dituzu."
+
+#: .\templates\personajes.html:9
+msgid ""
+"Clickando en el nombre de tu personaje favorito encontrarás mas información "
+"sobre él."
+msgstr ""
+"Zure gogoko pertsonaiaren izenean klik eginez, berari buruzko informazio "
+"gehiago aurkituko duzu."
+
+#: .\templates\personajes.html:22
+msgid "No hay personajes creados."
+msgstr "Ez da pertsonaiarik sortu."
+
+#: .\templates\raza.html:5
+msgid "Detalles de la raza"
+msgstr "Arrazaren xehetasunak"
+
+#: .\templates\raza.html:12
+msgid "Datos de la raza"
+msgstr "Arrazaren datuak"
+
+#: .\templates\raza.html:17
+msgid "Tamaño:"
+msgstr "Tamaina:"
+
+#: .\templates\raza.html:18
+msgid "Característica:"
+msgstr "Ezaugarria:"
+
+#: .\templates\raza.html:19
+msgid "Actitud:"
+msgstr "Jarrera:"
+
+#: .\templates\raza.html:20
+msgid "Longevidad:"
+msgstr "Biziraupena:"
+
+#: .\templates\raza.html:33
+msgid "No hay personajes asociados a esta raza."
+msgstr "Ez dago arraza honi lotutako pertsonairik."
+
+#: .\templates\raza.html:39
+msgid "No existe esta raza."
+msgstr "Ez dago arraza hau."
+
+#: .\templates\razas.html:4 .\templates\razas.html:14
+msgid "Lista de razas"
+msgstr "Arrazen zerrenda"
+
+#: .\templates\razas.html:9
+#, fuzzy
+#| msgid "Bienvenido a la fansite del Señor de los Anillos"
+msgid "En este sección encontrarás todas las razas del Señor de los Anillos."
+msgstr "Ongi etorri Eraztunen Jaunaren zaleen orrialdera"
+
+#: .\templates\razas.html:10
+msgid ""
+"Haciendo click en el nombre de tu raza favorita encontraras mas información "
+"sobre ella."
+msgstr ""
+"Zure gustuko arrazaren izenean klik eginez, honen inguruko informazio "
+"gehiago aurkituko duzu."
+
+#: .\templates\razas.html:24
+msgid "No hay razas creadas."
+msgstr "Ez da arrazarik sortu."

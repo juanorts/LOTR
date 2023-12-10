@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-10 17:17+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\forms.py:9 .\forms.py:27
+msgid "Nombre de usuario"
+msgstr "Username"
+
+#: .\forms.py:11 .\forms.py:28
+msgid "Correo electrónico"
+msgstr "Email address"
+
+#: .\forms.py:13
+msgid "Contraseña"
+msgstr "Password"
+
+#: .\forms.py:18
+msgid "Confirmación de contraseña"
+msgstr "Password confirmation"
+
+#: .\templates\auth\login.html:10
+msgid "Iniciar sesión"
+msgstr "Login"
+
+#: .\templates\auth\login.html:11
+msgid "¿Para qué hay que iniciar sesión?"
+msgstr "Why do you need to log in?"
+
+#: .\templates\auth\login.html:12
+msgid ""
+"Crea una cuenta para poder añadir y modificar los personajes de El Señor de "
+"los Anillos"
+msgstr ""
+"Create an account to be able to add and modify characters from The Lord of "
+"the Rings"
+
+#: .\templates\auth\login.html:30
+msgid "Si no tienes cuenta regístrate"
+msgstr "If you don't have an account, register"
+
+#: .\templates\auth\login.html:30
+msgid "aquí"
+msgstr "here"
+
+#: .\templates\auth\registrar.html:9
+msgid "Registro de Usuario"
+msgstr "User registration"
+
+#: .\templates\auth\registrar.html:11
+msgid "Ha habido algun problema con el registro, pruebalo otra vez"
+msgstr "There has been a problem with the registration, please try again."
+
+#: .\templates\auth\registrar.html:19
+msgid "Tu contraseña debe cumplir con los siguientes requisitos:"
+msgstr "Your password must meet the following requirements:"
+
+#: .\templates\auth\registrar.html:20
+msgid "Al menos 8 caracteres"
+msgstr "At least 8 characters"
+
+#: .\templates\auth\registrar.html:21
+msgid "No demasiado similar a tu otra información personal"
+msgstr "Not too similar to your other personal information"
+
+#: .\templates\auth\registrar.html:22
+msgid "No una contraseña comúnmente utilizada"
+msgstr "Not a commonly used password"
+
+#: .\templates\auth\registrar.html:23
+msgid "No completamente numérica"
+msgstr "Not entirely numeric"
+
+#: .\views.py:26
+msgid "Sesión cerrada con éxito"
+msgstr "Session successfully closed."
+
+#~ msgid "Ingresa la misma contraseña que antes, para verificación."
+#~ msgstr "Enter the same password as before, for verification."
+
+#~ msgid "Usuario"
+#~ msgstr "User"
+
+#~ msgid "Registrar"
+#~ msgstr "Register"

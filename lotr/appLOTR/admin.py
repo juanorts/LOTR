@@ -1,7 +1,15 @@
 from django.contrib import admin
+from .models import Personaje, Pelicula, Raza
+from modeltranslation.admin import TranslationAdmin
 
-from django.contrib import admin
-from .models import Pelicula, Raza, Personaje
-admin.site.register(Pelicula)
-admin.site.register(Raza)
-admin.site.register(Personaje)
+@admin.register(Personaje)
+class PersonajeAdmin(TranslationAdmin):
+    list_display = ("nombre", )
+
+@admin.register(Pelicula)
+class PeliculaAdmin(TranslationAdmin):
+    list_display = ("titulo", )
+
+@admin.register(Raza)
+class RazaAdmin(TranslationAdmin):
+    list_display = ("nombre", )

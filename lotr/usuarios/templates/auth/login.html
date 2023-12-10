@@ -2,32 +2,32 @@
 
 {% block titulo %} Detalles del personaje {% endblock %}
 {% load static %}
+{% load i18n %}
 
 {% block contenido %}
 
 <div class = "intro">
-  <h2>Login</h2>
-  <h4>¿Para que hay que inicia sesion?</h4>
-  <p class="descripcion">Crea una cuenta para poder añadir y modificar los personajes de El Señor de los Anillos</p>
+  <h2>{% trans "Iniciar sesión" %}</h2>
+  <h3 id="inicioSesion">{% trans "¿Para qué hay que iniciar sesión?" %}</h3>
+  <p class="descripcion">{% trans "Crea una cuenta para poder añadir y modificar los personajes de El Señor de los Anillos" %}</p>
 </div>
 
     <form method="POST">
         {% csrf_token %}
         <div class="mb-3">
-            <label for="usuario" class="form-label">Usuario</label>
-            <input type="text" class="form-control" id="usuario" name="usuario">
-            <div id="usuarioHelp" class="form-text"></div>
+          <label for="usuario" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="usuario" name="usuario">
+          <div id="usuarioHelp" class="form-text"></div>
         </div>
-        
+
         <div class="mb-3">
-            <label for="contrasena" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="contrasena" name="contrasena">
+          <label for="contrasena" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="contrasena" name="contrasena">
         </div>
-      
         <br>
         <input type="submit" value="Login" class="botonesFormularios">
     </form>
-    <p id="linkRegistro">Si no tienes cuenta registrese <a href="{% url 'registrar_usuario' %}">aqui</a></p>
+    <p id="linkRegistro">{% trans "Si no tienes cuenta regístrate" %} <a href="{% url 'registrar_usuario' %}">{% trans "aquí" %}</a></p>
 
 <br><br>
 

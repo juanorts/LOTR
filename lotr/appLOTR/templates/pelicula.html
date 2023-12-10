@@ -1,30 +1,30 @@
 {% extends "base.html" %}
+{% load static i18n %}
 
 {% block titulo %} Detalles de la pelicula {% endblock %}
 {% load static %}
 
 {% block contenido %}
+<h2>{% trans "Datos de la pelicula" %}</h2>
 
 <div id="pelicula">
-    <h2>Datos de la pelicula</h2>
 {% if pelicula %}
 
     <h3 id="nombre">{{ pelicula.titulo }}</h3>
 
     <img id="imagenPelicula" src="{% static pelicula.imagen %}" alt="{{ pelicula.titulo }}">
-      
     <div id="datosPelicula">
-        <p><strong>Año de estreno:</strong> {{ pelicula.anyo}}</p><br>
+        <p><strong>{% trans "Año de estreno" %}:</strong> {{ pelicula.anyo}}</p>
  
-        <p><strong>Director:</strong> {{ pelicula.director}}</p><br>
-       
-        <p><strong>Duración:</strong> {{ pelicula.duracion}} mins</p><br>
-       
-        <p><strong>Género:</strong> {{ pelicula.genero}} </p><br>
+        <p><strong>{% trans "Director" %}:</strong> {{ pelicula.director}}</p>
+   
+        <p><strong>{% trans "Duración de la película" %}:</strong> {{ pelicula.duracion}} min</p>
+   
+        <p><strong>{% trans "Género" %}:</strong> {{ pelicula.genero}} </p>
     </div>
 
     <div id="listadoPeliculas">
-    <h3>Personajes que aparecen en la película:</h3>
+    <h3>{% trans "Personajes que aparecen en la película" %}:</h3>
         
         <ul>
         {% if personajes %}
@@ -34,13 +34,13 @@
                 </li>
             {% endfor %}
         {% else %}
-            <p>La película no tiene personajes asociados.</p>
+            <p>{% trans "La película no tiene personajes asociados." %}</p>
         {% endif %}
         </ul>
     </div>
 </div>
 {% else %}
-    <p>No existe esta película.</p>
+    <p>{% trans "No existe esta película." %}</p>
 {% endif %}
 
 {% endblock %}

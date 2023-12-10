@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from .forms import CustomUserCreationForm
+from django.utils.translation import gettext_lazy as _
 
 def login_usuario(request):
     if request.method == "POST":
@@ -22,7 +23,7 @@ def login_usuario(request):
 
 def logout_usuario(request):
     logout(request)
-    messages.success(request, ("LogOut exitoso"))
+    messages.success(request, _("Sesión cerrada con éxito"))
     return redirect('index')
 
 def registrar_usuario(request):

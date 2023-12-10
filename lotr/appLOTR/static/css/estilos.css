@@ -3,6 +3,17 @@
     src: url('../fonts/lotr.ttf') format('truetype');
 }
 
+#header{
+    position: relative;
+}
+
+.flag-container {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    padding-left: 50px;
+}
+
 body{
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../img/mapa.jpeg');
     font-family: 'Tahoma', sans-serif;
@@ -21,14 +32,9 @@ footer {
     position: relative;
 }
 
-#cabecero {
-    background-color: #36220f;
-    border-bottom: 2px solid #3e2712da;
-    height: fit-content;
-}
-
 #cabecero h1 {
     color: rgb(201, 197, 186);
+    background-color: #36220f;
     text-align: center;
     padding-top:  30px;
     font-family: 'lotr';
@@ -43,21 +49,20 @@ footer {
     position: absolute;
     margin-bottom: -5px;
     right: 0px;
-    top: 79px;
     cursor: pointer;
 }
-
-/* h1 {
+/*
+h1 {
     background-color: #36220f;
     color: rgb(201, 197, 186);
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 25px 20px 20px 20px;
     border-bottom: 2px solid #3e2712da;
     font-family: 'lotr';
     font-size: 50px;
-} */
-
+}
+*/
 h2{
     text-decoration: none;
     color: rgb(201, 197, 186);
@@ -66,12 +71,23 @@ h2{
     text-align: center;
 }
 
+#anillo-musical{
+    padding-top: 20px;
+    padding-left: 20px;
+    top: 8px;
+    left: 1px;
+    position: fixed;
+    width: 70px;
+    cursor: pointer;
+}
+
 h2, h3, p{
     text-align: center;  
 }
 
-h4 {
+h4, #inicioSesion {
     text-align: left;
+    margin: 10;
     padding-left: 40px;
     font-family: "Lucida Calligraphy", "Segoe Script", sans-serif;
     font-size: 18px;
@@ -80,7 +96,7 @@ h4 {
 }
 
 #navegador a {
-    color: rgb(201, 197, 186);
+    color: rgb(255, 187, 0);
     font-weight: bold;
     font-size: 20px;
     font-family: 'lotr';
@@ -92,16 +108,6 @@ h4 {
     text-align: center;
     background-color: #3e2712da;
     padding: 10px;
-}
-
-#anillo-musical{
-    padding-top: 20px;
-    padding-left: 20px;
-    top: 1px;
-    left: 1px;
-    position: fixed;
-    width: 70px;
-    cursor: pointer;
 }
 
 .descripcion{
@@ -123,7 +129,6 @@ h4 {
     width: max-content;
     /* max-width: 25%; */
     box-shadow: 0px 0px 10px rgba(99, 37, 22, 0.6);
-    
 }
 
 #listado h4 {
@@ -138,10 +143,9 @@ h4 {
 }
 
 #listado li {
-    list-style: decimal;
-    text-align: left;
-    font-size: 20px;
-    color : rgb(201, 197, 186);
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
 }
 
 #listado_p {
@@ -205,8 +209,8 @@ h4 {
     color: rgb(201, 197, 186);
 }
 
-#listadoPeliculas, #caracteristicasRaza, #personajes {
-    background-color: #746345e6;
+#nombre, #listadoPeliculas, #caracteristicasRaza, #personajes {
+    background-color: #c9b2ad;
     display: block;
     padding: 10px;
     border-radius: 10px;
@@ -242,7 +246,7 @@ h4 {
 }
 
 #listaRaza a {
-    
+
     color: rgb(201, 197, 186);
     text-decoration: none;
 }
@@ -323,11 +327,13 @@ img{
 #imagen-oculta {
     display: none;
     width: 200px;
-    top: 10px;
-    right: 100px;
+    top: 50px;
+    right: 230px;
     position: absolute;
 }
 
+/* styles.css */
+/* Add some basic styling to the form */
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -337,9 +343,10 @@ form {
     background-color: #c9b2ad;
     border-radius: 10px;
     text-align: center;
-    
+
 }
 
+/* Style form labels */
 label {
     display: block;
     margin-bottom: 1px;
@@ -347,12 +354,14 @@ label {
     font-size: 20px;
 }
 
+/* Style form input fields */
 input, select, textarea {
     width: 75%;
     margin-bottom: 3px;
     box-sizing: border-box;
 }
 
+/* Style the submit button */
 .botonesFormularios {
     max-width: 400px;
     background-color: #26401be6;
@@ -397,6 +406,7 @@ input, select, textarea {
     border-radius: 10px;
     text-align: center;
 }
+
 #botonesFormulariosDesabilitado{
     max-width: 400px;
     background-color: #777575;
@@ -407,6 +417,3 @@ input, select, textarea {
     font-family:'lotr';
     margin: 0 auto;
 }
-
-
-

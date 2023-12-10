@@ -1,23 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block titulo %}El Señor de los Anillos {% endblock %}
 
 {% block contenido %}
-<h2>Añadir Personaje</h2>
+<h2>{% trans "Añadir Personaje" %}</h2>
 
 {% if enviado %}
-    El Personaje se ha añadido correctamente
+    <p id="personajeAnyadido">{% trans "El personaje se ha añadido correctamente" %}</p>
 {% else %}
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
 
         {{form.as_p}}
         {% if user.is_authenticated %}
-            <input type="submit" value="Añadir Personaje" class="botonesFormularios">
+            <input type="submit" value='{% trans "Añadir Personaje" %}' class="botonesFormularios">
         {% else %}
-            <input type="submit" value="Añadir Personaje" class="botonesFormulariosDesabilitado" disabled>
-            <p>Inicia sesion para añadir mas personajes</p>
+            <input type="submit" value='{% trans "Añadir Personaje" %}' class="botonesFormulariosDesabilitado" disabled>
+            <p>{% trans "Inicia sesion para añadir mas personajes" %}</p>
         {% endif %}
 
         

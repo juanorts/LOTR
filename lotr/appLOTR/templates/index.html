@@ -1,19 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
+{% load static i18n %}
 
-{% block titulo %}El Señor de los Anillos {% endblock %}
+{% block titulo %}{% trans "El Señor de los Anillos" %} {% endblock %}
 
 {% block contenido %}
 <div class = "intro">
-    <h2>Bienvenido a la <strong>fansite</strong> del Señor de los Anillos</h2>
-    <h4>¿Que puedo encontrar en esta pagina web?</h4>
-    <p class="descripcion">Aquí encontrarás toda la información sobre el mundo cinematografico, de la mejor saga del mundo. Podras acceder a la mejor información sobre las peliculas, los personajes de estas e incluso sus razas.</p>
-    <h4>¿Quienes han creado esta pagina?</h4>
-    <p class="descripcion">Los creadores somos unos estudiantes a los que nos encanta LOTR y que queremos ofrecer la mejor pagina web para todos los fans del mundo</p>
+    <h2>{% trans "Bienvenido a la fansite del Señor de los Anillos" %}</h2>
+    <h4>{% trans "¿Qué puedo encontrar en esta página web?" %}</h4>
+    <p class="descripcion">{% trans "Aquí encontrarás toda la información sobre el mundo cinematografico, de la mejor saga del mundo. Podras acceder a la mejor información sobre las peliculas, los personajes de estas e incluso sus razas." %}</p>
+    <h4>{% trans "¿Quienes han creado esta pagina?" %}</h4>
+    <p class="descripcion">{% trans "Los creadores somos unos estudiantes a los que nos encanta LOTR y que queremos ofrecer la mejor pagina web para todos los fans del mundo" %}</p>
 </div>
 {% if lista_personajes %}
     <div id="listado">
-        <h4>Aqui tienes algunos de los personajes mas relevantes</h4>
+        <h4>{% trans "Aquí tienes algunos de los personajes más relevantes" %}</h4>
         <ul>
             {% for p in lista_personajes %}
                 <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">

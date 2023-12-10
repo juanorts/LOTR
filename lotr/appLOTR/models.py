@@ -16,7 +16,7 @@ class Pelicula(models.Model):
 class Raza(models.Model):
     # No es necesario crear un campo para la Primary Key, Django creará automáticamente un IntegerField.
     nombre = models.CharField(max_length=20, default = 'null')
-    tamnyo = models.CharField(max_length=20, default = 'null')
+    tamanyo = models.CharField(max_length=20, default = 'null')
     caracteristica = models.CharField(max_length=20, default = 'null')
     actitud = models.CharField(max_length=20, default = 'null')
     longevidad = models.CharField(max_length=20, default = 'null')

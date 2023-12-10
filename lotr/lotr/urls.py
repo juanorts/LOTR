@@ -16,10 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
- path('', include('appLOTR.urls')),
- path('admin/', admin.site.urls),
- path('usuarios/', include('django.contrib.auth.urls')),
- path('usuarios/', include('usuarios.urls')),
+    path('admin/', admin.site.urls),
+    path('usuarios/', include('django.contrib.auth.urls')),
+    path('usuarios/', include('usuarios.urls')),
 ]
+
+urlpatterns += i18n_patterns(
+    path('', include('appLOTR.urls')),
+    path('', include('usuarios.urls')),
+    # ... cualquier otra URL que quieras localizar ...
+    prefix_default_language=True
+)

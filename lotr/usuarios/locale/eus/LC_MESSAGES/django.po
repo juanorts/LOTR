@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-10 17:17+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\forms.py:9 .\forms.py:27
+msgid "Nombre de usuario"
+msgstr "Erabiltzaile izena"
+
+#: .\forms.py:11 .\forms.py:28
+msgid "Correo electrónico"
+msgstr "Posta elektronikoa"
+
+#: .\forms.py:13
+msgid "Contraseña"
+msgstr "Pasahitza"
+
+#: .\forms.py:18
+msgid "Confirmación de contraseña"
+msgstr "Pasahitza baieztatzea"
+
+#: .\templates\auth\login.html:10
+msgid "Iniciar sesión"
+msgstr "Saioa hasi"
+
+#: .\templates\auth\login.html:11
+msgid "¿Para qué hay que iniciar sesión?"
+msgstr "Zergatik da saioa hasteko beharra?"
+
+#: .\templates\auth\login.html:12
+msgid ""
+"Crea una cuenta para poder añadir y modificar los personajes de El Señor de "
+"los Anillos"
+msgstr ""
+"Sortu kontu bat Eraztunen Jaunaren pertsonaiak gehitzeko eta aldatzeko "
+"aukera izateko"
+
+#: .\templates\auth\login.html:30
+msgid "Si no tienes cuenta regístrate"
+msgstr "Ez baduzu konturik erregistratu"
+
+#: .\templates\auth\login.html:30
+msgid "aquí"
+msgstr "hemen"
+
+#: .\templates\auth\registrar.html:9
+msgid "Registro de Usuario"
+msgstr "Erabiltzaile erregistroa"
+
+#: .\templates\auth\registrar.html:11
+#, fuzzy
+#| msgid "Ha habido algun problema con el registro, pruébalo otra vez"
+msgid "Ha habido algun problema con el registro, pruebalo otra vez"
+msgstr "Erregistroarekin arazo bat egon da, saiatu berriro mesedez."
+
+#: .\templates\auth\registrar.html:19
+msgid "Tu contraseña debe cumplir con los siguientes requisitos:"
+msgstr "Zure pasahitzak hurrengo baldintzak bete behar ditu:"
+
+#: .\templates\auth\registrar.html:20
+msgid "Al menos 8 caracteres"
+msgstr "Gutxienez 8 karaktere"
+
+#: .\templates\auth\registrar.html:21
+msgid "No demasiado similar a tu otra información personal"
+msgstr "Ez izan zure beste informazio pertsonalarekin oso antzekoa"
+
+#: .\templates\auth\registrar.html:22
+msgid "No una contraseña comúnmente utilizada"
+msgstr "Ez izan ohiko erabiltzen den pasahitza"
+
+#: .\templates\auth\registrar.html:23
+msgid "No completamente numérica"
+msgstr "Ez izan erabat zenbakizkoa"
+
+#: .\views.py:26
+msgid "Sesión cerrada con éxito"
+msgstr "Saioa arrakastaz itxi da."
+
+#~ msgid "Ingresa la misma contraseña que antes, para verificación."
+#~ msgstr "Sartu aurretik berdina izan zen pasahitza, egiaztapenerako."
+
+#~ msgid "Usuario"
+#~ msgstr "Erabiltzailea"
+
+#~ msgid "Registrar"
+#~ msgstr "Erregistratu"
