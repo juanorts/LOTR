@@ -8,11 +8,20 @@
 
 <div id="personaje">
 {% if raza %}
-    <h3 id="nombre">{{ raza.nombre }}</h3>
+    <h2>Datos de la raza</h2>
     <img id="imagenRaza" src="{% static raza.imagen %}" alt="{{ raza.nombre }}">
-    <h3>Lista de personajes</h3>
+    <h3 id="nombre">{{ raza.nombre }}</h3>
+
+    <div id="caracteristicasRaza">
+        <p><strong>Tamaño:</strong> {{raza.tamnyo}}</p><br>
+        <p><strong>Característica:</strong> {{raza.caracteristica}}</p><br>
+        <p><strong>Actitud:</strong> {{raza.actitud}}</p><br>
+        <p><strong>Longevidad:</strong> {{raza.longevidad}}</p><br>
+    </div>
+
     {% if personajes %}
     <div id="listaRaza">
+        <h3>Lista de personajes</h3>
         <ol>
             {% for p in personajes %}
                 <li><a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a></li>
@@ -23,16 +32,10 @@
         <p>No hay personajes asociados a esta raza.</p>
     {% endif %}
     <br>
-    <div id="caracteristicasRaza">
-        <p><strong>Tamaño:</strong> {{raza.tamnyo}}</p><br>
-        <p><strong>Característica:</strong> {{raza.caracteristica}}</p><br>
-        <p><strong>Actitud:</strong> {{raza.actitud}}</p><br>
-        <p><strong>Longevidad:</strong> {{raza.longevidad}}</p><br>
-    </div>
+
 </div>
 {% else %}
     <p>No existe esta raza.</p>        
 {% endif %}
-
 
 {% endblock %}

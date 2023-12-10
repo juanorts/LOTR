@@ -3,10 +3,14 @@
 {% block titulo %} Razas {% endblock %}
 
 {% block contenido %}
-
-<h2>Lista de razas</h2>
+<div id = "desRazas">
+	<h2>Razas</h2>
+	<p> En este sección encontraras todas las razas del Señor de los Anillos.</p>
+	<p>Clicando en el nombre de tu raza favorita encontraras mas información sobre ella.</p>
+</div>
 {% if razas %}
 <div id="listado">
+	<h2>Lista de razas</h2>
 	<ul>
 	{% for r in razas %}
 		<li>

@@ -16,9 +16,9 @@
         <h4>Aqui tienes algunos de los personajes mas relevantes</h4>
         <ul>
             {% for p in lista_personajes %}
+                <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
                 <li>
                     <a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a><br><br>
-                    <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
                 </li>
             {% endfor %}
         </ul>
