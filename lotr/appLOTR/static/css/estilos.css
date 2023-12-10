@@ -36,7 +36,6 @@ h2, h3, p{
 
 h4 {
     text-align: left;
-    margin: 10;
     padding-left: 40px;
     font-family: "Lucida Calligraphy", "Segoe Script", sans-serif;
     font-size: 18px;
@@ -141,8 +140,6 @@ img{
     width: 300px;
 }
 
-/* styles.css */
-/* Add some basic styling to the form */
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -155,7 +152,6 @@ form {
     
 }
 
-/* Style form labels */
 label {
     display: block;
     margin-bottom: 1px;
@@ -163,14 +159,12 @@ label {
     font-size: 20px;
 }
 
-/* Style form input fields */
 input, select, textarea {
     width: 75%;
     margin-bottom: 3px;
     box-sizing: border-box;
 }
 
-/* Style the submit button */
 .botonesFormularios {
     max-width: 400px;
     background-color: #26401be6;
@@ -205,6 +199,16 @@ input, select, textarea {
     text-align: center;
 }
 
+#mensajesRegistro{
+    font-family: 'Tahoma', sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #777575;
+    border-radius: 10px;
+    text-align: center;
+}
 #botonesFormulariosDesabilitado{
     max-width: 400px;
     background-color: #777575;

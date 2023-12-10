@@ -6,20 +6,22 @@
 {% block contenido %}
 <div class = "intro">
     <h2>Bienvenido a la <strong>fansite</strong> del Señor de los Anillos</h2>
-    <h4>¿Que puedo encontrar en esta pagina web?</h3>
+    <h4>¿Que puedo encontrar en esta pagina web?</h4>
     <p class="descripcion">Aquí encontrarás toda la información sobre el mundo cinematografico, de la mejor saga del mundo. Podras acceder a la mejor información sobre las peliculas, los personajes de estas e incluso sus razas.</p>
     <h4>¿Quienes han creado esta pagina?</h4>
     <p class="descripcion">Los creadores somos unos estudiantes a los que nos encanta LOTR y que queremos ofrecer la mejor pagina web para todos los fans del mundo</p>
 </div>
 {% if lista_personajes %}
     <div id="listado">
-    <h4>Aqui tienes algunos de los personajes mas relevantes</h4>
-    <ul>
-    {% for p in lista_personajes %}
-        <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
-        <a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a><br><br>
-    {% endfor %}
-    </ul>
+        <h4>Aqui tienes algunos de los personajes mas relevantes</h4>
+        <ul>
+            {% for p in lista_personajes %}
+                <li>
+                    <a href="{% url 'personaje' p.id %}">{{ p.nombre }}</a><br><br>
+                    <img class="imagenPersonaje" src="{% static p.imagen %}" alt="{{ p.nombre }}">
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 {% else %}
     <p>No hay departamentos creados.</p>

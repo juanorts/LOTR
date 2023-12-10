@@ -6,7 +6,7 @@
 {% block contenido %}
 <h2>Modificar Personaje</h2>
 
-<form action="" method="POST" enctype="multipart/form-data">
+<form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     {{form.as_p}}
     <br>
