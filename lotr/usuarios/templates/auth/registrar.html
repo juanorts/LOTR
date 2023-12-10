@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block titulo %} Detalles del personaje {% endblock %}
+{% load static %}
+
+{% block contenido %}
+
+<h2>Registro de Usuario</h2>
+{% if form.errors %}
+<p>Ha habido algun problema con el registro, pruebalo otra vez</p>
+{% endif %}
+
+<form action="{% url 'registrar_usuario' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="botonesFormularios" type="submit" value="Registrar">
+</form>
+
+
+{% endblock %}

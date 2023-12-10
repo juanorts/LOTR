@@ -1,8 +1,10 @@
 
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, get_list_or_404
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Pelicula, Raza, Personaje
+from .forms import PersonajeForm
+from django.http import HttpResponseRedirect
 
 #   Devuelve el listado de razas
 def index_razas(request):
@@ -49,3 +51,25 @@ def index(request):
 		print(p.raza_id)
 	context = {'lista_personajes': personajesFiltrados }
 	return render(request, 'index.html', context)
+
+def anyadirPersonaje(request):
+	enviado = False
+	if request.method == "POST":
+		form = PersonajeForm(request.POST, request.FILES)
+		if form.is_valid():
+			form.save()
+			return HttpResponseRedirect('/formularioPersonajes?enviado=True')
+	else:
+		form = PersonajeForm
+		if 'enviado' in request.GET:
+			enviado = True
+	return render(request, 'formularioPersonajes.html', {'form':form, 'enviado':enviado})
+
+def modificarPersonaje(request, personaje_id):
+	personaje = get_object_or_404(Personaje, pk=personaje_id)
+	form = PersonajeForm(request.POST or None, request.FILES or None, instance=personaje)
+	if form.is_valid():
+			form.save()
+			return redirect('personajes')
+	context = { 'personaje': personaje, 'form': form}
+	return render(request, 'modificarPersonaje.html', context)

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}El Señor de los Anillos {% endblock %}
+
+{% block contenido %}
+<h2>Modificar Personaje</h2>
+
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <input class="botonesFormularios" type="submit" value="Actualizar">
+</form>
+
+{% endblock %}

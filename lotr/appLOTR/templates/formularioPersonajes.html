@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}El Señor de los Anillos {% endblock %}
+
+{% block contenido %}
+<h2>Añadir Personaje</h2>
+
+{% if enviado %}
+    El Personaje se ha añadido correctamente
+{% else %}
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{form.as_p}}
+        {% if user.is_authenticated %}
+            <input type="submit" value="Añadir Personaje" class="botonesFormularios">
+        {% else %}
+            <input type="submit" value="Añadir Personaje" class="botonesFormulariosDesabilitado" disabled>
+            <p>Inicia sesion para añadir mas personajes</p>
+        {% endif %}
+
+        
+
+    </form>
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block titulo %} Detalles del personaje {% endblock %}
+{% load static %}
+
+{% block contenido %}
+
+<div class = "intro">
+  <h2>Login</h2>
+  <h4>¿Para que hay que inicia sesion?</h3>
+  <p class="descripcion">Crea una cuenta para poder añadir y modificar los personajes de El Señor de los Anillos</p>
+</div>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+            <div class="mb-3">
+              <label for="usuario" class="form-label">Usuario </label>
+              <br>
+              <input type="usuario" class="form-control" name="usuario">
+              <div id="usuarioHelp" class="form-text"></div>
+              <br>
+            </div>
+            <div class="mb-3">
+              <label for="contrasena" class="form-label">Contraseña </label>
+              <br>
+              <input type="contrasena" class="form-control" name="contrasena">
+            </div>
+        <br>
+        <input type="submit" value="Login" class="botonesFormularios">
+    </form>
+    <p id="linkRegistro">Si no tienes cuenta registrese <a href="{% url 'registrar_usuario' %}">aqui</a></p>
+
+<br><br>
+
+{% endblock %}

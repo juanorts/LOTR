@@ -140,3 +140,81 @@ img{
     height: auto;
     width: 300px;
 }
+
+/* styles.css */
+/* Add some basic styling to the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #c9b2ad;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-family: 'lotr';
+    font-size: 20px;
+}
+
+/* Style form input fields */
+input, select, textarea {
+    width: 75%;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+.botonesFormularios {
+    max-width: 400px;
+    background-color: #26401be6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:'lotr';
+    margin: 0 auto;
+}
+
+#linkRegistro{
+    font-family:'lotr';
+    border-radius: 5px;
+    background-color: #c9b2ad;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.textoRegistro{
+    font-family: 'Tahoma', sans-serif;
+}
+#mensajes{
+    font-family: 'Tahoma', sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #777575;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#botonesFormulariosDesabilitado{
+    max-width: 400px;
+    background-color: #777575;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:'lotr';
+    margin: 0 auto;
+}
+
+
+
