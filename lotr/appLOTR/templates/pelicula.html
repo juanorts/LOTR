@@ -4,9 +4,9 @@
 {% load static %}
 
 {% block contenido %}
-<h2>Datos de la pelicula</h2>
 
 <div id="pelicula">
+    <h2>Datos de la pelicula</h2>
 {% if pelicula %}
 
     <h3 id="nombre">{{ pelicula.titulo }}</h3>
@@ -22,7 +22,7 @@
        
         <p><strong>Género:</strong> {{ pelicula.genero}} </p><br>
     </div>
-    
+
     <div id="listadoPeliculas">
     <h3>Personajes que aparecen en la película:</h3>
         

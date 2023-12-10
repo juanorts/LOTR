@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var temporizador = setInterval(function() {
             
             var tiempoPasado = Date.now() - start; // cuánto tiempo ha pasado desde el inicio
-            gandalf.style.right = tiempoPasado / 5.4 + 'px'; // movimiento lineal simple
+            gandalf.style.right = tiempoPasado / 8 + 'px'; // movimiento lineal simple
             
             if (tiempoPasado > 2000){
                 clearInterval(temporizador);
